@@ -50,7 +50,7 @@
           </li>
           <li class="flex items-center gap-3 text-sm text-textSecondary">
             <span class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 text-xs">📖</span>
-            Múltiplos LOCs: IEAB, BCP 1928, 1979 e mais
+            Múltiplos LOCs: IEAB, IAB, 1662, 1987, ACNA e mais
           </li>
           <li class="flex items-center gap-3 text-sm text-textSecondary">
             <span class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 text-xs">🗓️</span>
