@@ -754,6 +754,68 @@ export const allQuestions: Question[] = [
     explanation:
       'George Herbert (1593–1633) foi um dos maiores poetas da língua inglesa e sacerdote anglicano. Sua obra "The Temple" (1633) é um clássico da espiritualidade anglicana. Muitos de seus poemas foram transformados em hinos, incluindo "Teach me, my God and King" e "Let all the world in every corner sing".',
   },
+
+  // ─── FIGURAS DO ANGLICANISMO BRASILEIRO ───────────────────────────────────
+  {
+    id: 56,
+    question: 'Qual a importância histórica de Dom Athalício Pithan no anglicanismo brasileiro?',
+    options: [
+      'Foi o primeiro bispo nativo brasileiro, consagrado em 1940 quando a missão completou 50 anos',
+      'Foi o primeiro bispo a fundar uma paróquia anglicana em São Paulo',
+      'Foi o responsável por trazer o anglicanismo ao Nordeste do Brasil',
+      'Foi o primeiro bispo a ordenar mulheres na Igreja Episcopal no Brasil',
+    ],
+    correctIndex: 0,
+    difficulty: 2,
+    category: 'Brasil Anglicano',
+    explanation:
+      'Dom Athalício Theodoro Pithan (1898–1966) foi o primeiro bispo nativo brasileiro da história do anglicanismo no país, consagrado em 1940 — ano em que a missão anglicana no Brasil completava 50 anos. Até então, todos os bispos haviam sido norte-americanos. Tornou-se Bispo da Diocese Meridional, com sede em Porto Alegre (RS), berço do anglicanismo brasileiro.',
+  },
+  {
+    id: 57,
+    question: 'Dom Edmund Knox Sherrill é lembrado no anglicanismo brasileiro principalmente por qual razão?',
+    options: [
+      'Fundou a Diocese Setentrional (hoje Diocese Anglicana do Recife) em 1976, transferindo-se do Rio de Janeiro para Recife',
+      'Foi o primeiro bispo brasileiro a participar de uma Conferência de Lambeth',
+      'Traduziu o Livro de Oração Comum para o português brasileiro',
+      'Fundou a Faculdade de Teologia Anglicana do Brasil em São Paulo',
+    ],
+    correctIndex: 0,
+    difficulty: 3,
+    category: 'Brasil Anglicano',
+    explanation:
+      'Dom Edmund Knox Sherrill (filho do Primaz americano Henry Knox Sherrill) foi bispo no Brasil de 1959 até meados dos anos 1980. Em 1976, em ato descrito como de "coragem e visão", deixou o Rio de Janeiro e mudou-se para Recife para fundar a Diocese Setentrional — hoje Diocese Anglicana do Recife — com três paróquias iniciais em Belém, Recife e Salvador. Nesse mesmo ano criou o NAET (Núcleo Anglicano de Estudos Teológicos) para formação de líderes.',
+  },
+  {
+    id: 58,
+    question: 'O Rev. Paulo Garcia ficou conhecido na Igreja Episcopal no Recife especialmente por qual iniciativa pastoral?',
+    options: [
+      'Introduzir o Encontro de Casais com Cristo (ECC), que fez a Catedral da Santíssima Trindade crescer enormemente',
+      'Fundar o primeiro seminário teológico anglicano do Nordeste',
+      'Criar o programa de rádio anglicano mais ouvido do Brasil nos anos 1970',
+      'Traduzir os hinos anglicanos clássicos para o português nordestino',
+    ],
+    correctIndex: 0,
+    difficulty: 3,
+    category: 'Brasil Anglicano',
+    explanation:
+      'O Rev. Paulo Garcia chegou a Recife em 1975 como pároco da Paróquia da Santíssima Trindade. Ao descobrir o Encontro de Casais com Cristo (ECC), exclamou: "Achei uma mina de ouro!" — e o modelo se espalhou por todo o Nordeste. Sob sua liderança, a Catedral da Santíssima Trindade tornou-se a paróquia anglicana de maior crescimento no Brasil à época.',
+  },
+  {
+    id: 59,
+    question: 'Além de ser bispo anglicano, Robinson Cavalcanti se destacou academicamente e no âmbito ecumênico por qual razão?',
+    options: [
+      'Foi um dos 25 fundadores da Fraternidade Teológica Latino-Americana (FTL) em 1970 e lecionou Ciência Política por 35 anos',
+      'Foi o primeiro doutor em Teologia formado inteiramente no Brasil dentro do anglicanismo',
+      'Fundou o Centro de Estudos Anglicanos da Universidade de Recife',
+      'Foi o único bispo anglicano a integrar o Conselho Mundial de Igrejas como representante brasileiro',
+    ],
+    correctIndex: 0,
+    difficulty: 4,
+    category: 'Brasil Anglicano',
+    explanation:
+      'Robinson Cavalcanti (1944–2012) era graduado em Ciências Sociais e Direito, com mestrado em Ciência Política pelo IUPERJ. Lecionou por 35 anos na UFPE e outras universidades. Em 1970, foi um dos 25 fundadores da Fraternidade Teológica Latino-Americana (FTL) em Cochabamba, entidade pioneira da teologia evangélica contextualizada na América Latina. Publicou mais de 1.000 artigos e vários livros sobre teologia e política.',
+  },
 ]
 
 export type DifficultyLevel = 1 | 2 | 3 | 4 | 5
