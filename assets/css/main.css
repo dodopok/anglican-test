@@ -77,6 +77,25 @@ body {
   transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Sticky next-button animation */
+.slide-up-btn-enter-active,
+.slide-up-btn-leave-active {
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slide-up-btn-enter-from,
+.slide-up-btn-leave-to {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Safe area / dynamic viewport */
+@supports (min-height: 100dvh) {
+  .min-h-dvh { min-height: 100dvh; }
+}
+@supports not (min-height: 100dvh) {
+  .min-h-dvh { min-height: 100vh; }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
