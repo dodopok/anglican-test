@@ -29,7 +29,7 @@ export const categoryColors: Record<string, string> = {
   'Liturgia': 'text-primary',
   'LOC & Orações': 'text-emerald-700',
   'Teologia': 'text-purple-700',
-  'IEAB': 'text-blue-700',
+  'Brasil Anglicano': 'text-blue-700',
   'Figuras Históricas': 'text-red-700',
   'Calendário Litúrgico': 'text-teal-700',
 }
@@ -133,18 +133,18 @@ export const allQuestions: Question[] = [
   },
   {
     id: 10,
-    question: 'O que significa a sigla IEAB?',
+    question: 'Por qual país vieram os primeiros missionários anglicanos que evangelizaram brasileiros no século XIX?',
     options: [
-      'Igreja Episcopal Anglicana do Brasil',
-      'Igreja Evangélica Anglicana do Brasil',
-      'Igreja Episcopal Apostólica do Brasil',
-      'Igreja Eternamente Anglicana no Brasil',
+      'Estados Unidos (Igreja Episcopal Americana)',
+      'Inglaterra (Igreja da Inglaterra)',
+      'Canadá (Igreja Anglicana do Canadá)',
+      'Escócia (Igreja Episcopal Escocesa)',
     ],
     correctIndex: 0,
     difficulty: 1,
-    category: 'IEAB',
+    category: 'Brasil Anglicano',
     explanation:
-      'A Igreja Episcopal Anglicana do Brasil (IEAB) é a província da Comunhão Anglicana no Brasil, tornando-se uma província autônoma em 1965. É membro pleno da Comunhão Anglicana, liderada pelo Arcebispo de Cantuária.',
+      'Os primeiros missionários a evangelizar brasileiros vieram dos Estados Unidos, enviados pela Igreja Episcopal Americana (ECUSA). A missão se concentrou inicialmente no Sul do Brasil, no Rio Grande do Sul, a partir de 1890. Antes disso, já existiam capelânias britânicas nas grandes cidades, mas voltadas à comunidade inglesa residente.',
   },
   {
     id: 11,
@@ -417,13 +417,18 @@ export const allQuestions: Question[] = [
   },
   {
     id: 33,
-    question: 'Em que ano a IEAB tornou-se uma Província autônoma da Comunhão Anglicana?',
-    options: ['1965', '1890', '1835', '1978'],
+    question: 'Em que região do Brasil se concentrou o início da missão anglicana entre brasileiros, no final do século XIX?',
+    options: [
+      'Sul do Brasil, especialmente no Rio Grande do Sul',
+      'Nordeste, em Pernambuco e Bahia',
+      'Sudeste, em São Paulo e Rio de Janeiro',
+      'Norte, na região Amazônica',
+    ],
     correctIndex: 0,
     difficulty: 3,
-    category: 'IEAB',
+    category: 'Brasil Anglicano',
     explanation:
-      'A IEAB tornou-se uma Província autônoma da Comunhão Anglicana em 1965. Antes disso, era parte da Igreja Episcopal dos Estados Unidos. A presença anglicana no Brasil remonta ao século XIX, com missionários e capelânias de ingleses.',
+      'A missão anglicana entre brasileiros teve início no Sul do Brasil, sobretudo no Rio Grande do Sul, a partir de 1890. Foi nessa região que missionários americanos — entre eles Lucien Lee Kinsolving e James Watson Morris — iniciaram o trabalho que daria origem à organização da Igreja Episcopal no Brasil.',
   },
   {
     id: 34,
@@ -474,7 +479,7 @@ export const allQuestions: Question[] = [
       'Reunião dos bispos de toda a Comunhão Anglicana, realizada a cada dez anos',
       'O conselho permanente de governo da Igreja da Inglaterra',
       'O tribunal eclesiástico do Arcebispo de Cantuária',
-      'O sínodo geral anual da IEAB',
+      'O sínodo geral anual da Igreja da Inglaterra',
     ],
     correctIndex: 0,
     difficulty: 4,
@@ -502,7 +507,7 @@ export const allQuestions: Question[] = [
     question: 'O que é o "Quadrilátero de Chicago-Lambeth" (1888)?',
     options: [
       'Quatro princípios anglicanos para a unidade cristã: Escrituras, Credos, Sacramentos e Episcopado histórico',
-      'Quatro dioceses fundadoras da IEAB',
+      'Quatro dioceses fundadoras da Igreja Episcopal nas Américas',
       'Um acordo de plena comunhão entre anglicanos e luteranos',
       'As quatro fontes teológicas do anglicanismo',
     ],
