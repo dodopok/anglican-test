@@ -12,7 +12,7 @@
       <div class="h-1 bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400" />
 
       <!-- Header -->
-      <div class="bg-primary cross-pattern px-6 pt-5 pb-6 text-center relative">
+      <div class="bg-primary px-6 pt-5 pb-6 text-center relative">
         <button
           @click="$emit('close')"
           class="absolute top-3 right-3 text-blue-200 hover:text-white transition-colors p-1"

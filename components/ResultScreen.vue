@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Score Card -->
-    <div class="relative bg-primary rounded-2xl p-6 mb-5 overflow-hidden cross-pattern shadow-lg text-center">
+    <div class="relative bg-primary rounded-2xl p-6 mb-5 overflow-hidden shadow-lg text-center">
       <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400" />
 
       <!-- Circular Score -->
