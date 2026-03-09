@@ -177,6 +177,8 @@ import type { ScoreTitle } from '~/composables/useQuiz'
 import type { Question } from '~/data/questions'
 import type { Answer } from '~/composables/useQuiz'
 
+const config = useRuntimeConfig()
+
 const props = defineProps<{
   score: number
   total: number
@@ -203,12 +205,12 @@ const dashOffset = computed(() => {
   return circumference.value * (1 - pct)
 })
 
+const siteUrl = computed(() => config.public.siteUrl)
+
 const shareText = computed(
   () =>
-    `Fiz o Teste Anglicano e obtive ${props.score}/${props.total} pontos (${percentage.value}%)! 🏆 Meu título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji}\n\nFaça também o teste em caminhoanglicano.com.br/teste 📖 #anglicanismo #IEAB`
+    `Fiz o Teste Anglicano e obtive ${props.score}/${props.total} pontos (${percentage.value}%)! 🏆 Meu título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji}\n\nFaça também: ${siteUrl.value} 📖 #anglicanismo #caminhoanglicano`
 )
-
-const siteUrl = 'https://caminhoanglicano.com.br/teste'
 
 const whatsappUrl = computed(
   () => `https://wa.me/?text=${encodeURIComponent(shareText.value)}`
@@ -217,13 +219,13 @@ const whatsappUrl = computed(
 const twitterUrl = computed(
   () =>
     `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-      `Fiz o Teste Anglicano e obtive ${props.score}/${props.total} pontos (${percentage.value}%)! Meu título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji} #anglicanismo #IEAB`
-    )}&url=${encodeURIComponent(siteUrl)}`
+      `Fiz o Teste Anglicano: ${props.score}/${props.total} pontos (${percentage.value}%)! Título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji} #anglicanismo #caminhoanglicano`
+    )}&url=${encodeURIComponent(siteUrl.value)}`
 )
 
 async function copyToClipboard() {
   try {
-    await navigator.clipboard.writeText(shareText.value + '\n\n' + siteUrl)
+    await navigator.clipboard.writeText(shareText.value)
     copied.value = true
     setTimeout(() => {
       copied.value = false

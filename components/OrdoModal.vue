@@ -109,14 +109,11 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig()
 defineEmits<{ close: [] }>()
 
 function handleStore(platform: 'ios' | 'android') {
-  // Links will be updated when app is live
-  if (platform === 'ios') {
-    window.open('https://apps.apple.com/br', '_blank')
-  } else {
-    window.open('https://play.google.com/store', '_blank')
-  }
+  const url = platform === 'ios' ? config.public.ordoAppStore : config.public.ordoPlayStore
+  window.open(url, '_blank')
 }
 </script>

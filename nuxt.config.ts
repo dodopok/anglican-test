@@ -1,5 +1,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL ?? 'https://quiz.caminhoanglicano.com.br',
+      siteBase: process.env.NUXT_PUBLIC_SITE_BASE ?? 'https://caminhoanglicano.com.br',
+      ordoAppStore: process.env.NUXT_PUBLIC_ORDO_APP_STORE ?? 'https://apps.apple.com/br',
+      ordoPlayStore: process.env.NUXT_PUBLIC_ORDO_PLAY_STORE ?? 'https://play.google.com/store',
+    },
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
