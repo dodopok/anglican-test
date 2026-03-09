@@ -1,0 +1,37 @@
+export default defineNuxtConfig({
+  devtools: { enabled: false },
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
+  ],
+  googleFonts: {
+    families: {
+      Raleway: [300, 400, 500, 600, 700, 800],
+      'Cormorant+Garamond': [400, 500, 600, 700],
+    },
+    display: 'swap',
+  },
+  css: ['~/assets/css/main.css'],
+  app: {
+    head: {
+      title: 'Teste Anglicano | Caminho Anglicano',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          name: 'description',
+          content:
+            'Teste seus conhecimentos sobre o anglicanismo em 30 perguntas! História, liturgia, Livro de Oração Comum e muito mais.',
+        },
+        { property: 'og:title', content: 'Teste Anglicano | Caminho Anglicano' },
+        {
+          property: 'og:description',
+          content: 'Quanto você sabe sobre o anglicanismo? Faça o teste e descubra!',
+        },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+  },
+})
