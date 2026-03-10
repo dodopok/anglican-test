@@ -62,6 +62,7 @@
             :score-title="scoreTitle"
             :answers="answers"
             :questions="questions"
+            :mode-label="currentModeLabel"
             @restart="restart"
             @show-ordo="showOrdoModal = true"
           />
@@ -120,7 +121,7 @@ const {
   phase, questions, currentIndex, currentQuestion,
   answers, selectedOptionIndex, showExplanation,
   displayOptions, isLastQuestion, score, progress,
-  scoreTitle, start, selectOption, next, restart,
+  scoreTitle, currentModeLabel, start, selectOption, next, restart,
 } = useQuiz()
 
 const showOrdoModal = ref(false)

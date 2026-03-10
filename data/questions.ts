@@ -829,8 +829,19 @@ export function selectQuestions(total: number = 30): Question[] {
     5: allQuestions.filter((q) => q.difficulty === 5),
   }
 
-  // Distribution: 6 muito fácil, 8 fácil, 8 médio, 5 difícil, 3 dificílima
-  const counts: Record<DifficultyLevel, number> = { 1: 6, 2: 8, 3: 8, 4: 5, 5: 3 }
+  // Distribution proportional to total (20% easy, 27% fácil, 27% médio, 17% difícil, 10% dificílima)
+  const dist = [0.20, 0.27, 0.27, 0.17, 0.10]
+  const rawCounts = dist.map((p) => Math.round(p * total))
+  // Adjust rounding so counts sum exactly to total
+  const diff = total - rawCounts.reduce((a, b) => a + b, 0)
+  rawCounts[2] += diff // add/subtract from the middle bucket
+  const counts: Record<DifficultyLevel, number> = {
+    1: rawCounts[0],
+    2: rawCounts[1],
+    3: rawCounts[2],
+    4: rawCounts[3],
+    5: rawCounts[4],
+  }
 
   const selected: Question[] = []
 

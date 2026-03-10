@@ -3,6 +3,14 @@ import { selectQuestions, shuffle, type Question } from '~/data/questions'
 
 export type Phase = 'intro' | 'quiz' | 'result'
 
+export type QuizMode = 10 | 15 | 30
+
+export const QUIZ_MODES: { value: QuizMode; label: string; description: string }[] = [
+  { value: 10, label: '10 perguntas', description: 'Rápido · ~5 min' },
+  { value: 15, label: '15 perguntas', description: 'Moderado · ~8 min' },
+  { value: 30, label: '30 perguntas', description: 'Completo · ~15 min' },
+]
+
 export interface Answer {
   questionId: number
   selectedIndex: number
@@ -90,6 +98,7 @@ export function getScoreTitle(score: number, total: number): ScoreTitle {
 
 export function useQuiz() {
   const phase = ref<Phase>('intro')
+  const selectedMode = ref<QuizMode>(10)
   const questions = ref<Question[]>([])
   const currentIndex = ref(0)
   const answers = ref<Answer[]>([])
@@ -104,9 +113,13 @@ export function useQuiz() {
     questions.value.length > 0 ? ((currentIndex.value + 1) / questions.value.length) * 100 : 0
   )
   const scoreTitle = computed(() => getScoreTitle(score.value, questions.value.length))
+  const currentModeLabel = computed(
+    () => QUIZ_MODES.find((m) => m.value === selectedMode.value)?.label ?? ''
+  )
 
-  function start() {
-    questions.value = selectQuestions(30)
+  function start(mode?: QuizMode) {
+    if (mode) selectedMode.value = mode
+    questions.value = selectQuestions(selectedMode.value)
     answers.value = []
     currentIndex.value = 0
     selectedOptionIndex.value = null
@@ -118,7 +131,6 @@ export function useQuiz() {
   function setupCurrentQuestion() {
     const q = questions.value[currentIndex.value]
     if (!q) return
-    // Shuffle option display order
     const indices = shuffle([0, 1, 2, 3].slice(0, q.options.length))
     displayOptions.value = indices.map((i) => q.options[i])
     selectedOptionIndex.value = null
@@ -162,17 +174,9 @@ export function useQuiz() {
     showExplanation.value = false
   }
 
-  function getOptionState(displayIndex: number): 'default' | 'correct' | 'wrong' | 'disabled' {
-    if (selectedOptionIndex.value === null) return 'default'
-    const q = currentQuestion.value
-    const correctDisplayIndex = displayOptions.value.indexOf(q.options[q.correctIndex])
-    if (displayIndex === correctDisplayIndex) return 'correct'
-    if (displayIndex === selectedOptionIndex.value) return 'wrong'
-    return 'disabled'
-  }
-
   return {
     phase,
+    selectedMode,
     questions,
     currentIndex,
     currentQuestion,
@@ -184,10 +188,10 @@ export function useQuiz() {
     score,
     progress,
     scoreTitle,
+    currentModeLabel,
     start,
     selectOption,
     next,
     restart,
-    getOptionState,
   }
 }

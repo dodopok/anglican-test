@@ -3,7 +3,6 @@
 
     <!-- ─── Hero ── -->
     <section class="hero-section">
-      <!-- Faint arch watermark -->
       <div class="arch-watermark" aria-hidden="true">
         <svg viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="82" y="1" width="36" height="258" rx="2" fill="#1754CF" opacity=".05"/>
@@ -29,20 +28,36 @@
       </div>
 
       <p class="hero-sub">
-        30 perguntas sobre história, liturgia, LOC e teologia anglicana.
-        Sorteadas a cada vez.
+        Teste seus conhecimentos sobre história, liturgia, LOC e teologia anglicana.
       </p>
     </section>
 
+    <!-- ─── Mode selector ── -->
+    <div class="mode-section">
+      <p class="mode-label">Escolha o modo</p>
+      <div class="mode-grid">
+        <button
+          v-for="mode in modes"
+          :key="mode.value"
+          :class="['mode-btn', selectedMode === mode.value ? 'mode-btn--active' : '']"
+          @click="selectedMode = mode.value"
+        >
+          <span class="mode-btn__questions">{{ mode.value }}</span>
+          <span class="mode-btn__label">perguntas</span>
+          <span class="mode-btn__desc">{{ mode.description }}</span>
+        </button>
+      </div>
+    </div>
+
     <!-- ─── CTA ── -->
-    <button class="cta-btn" @click="$emit('start')">
-      Começar o Teste
+    <button class="cta-btn" @click="$emit('start', selectedMode)">
+      Começar
       <svg class="cta-arrow" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
       </svg>
     </button>
 
-    <p class="cta-note">Cada tentativa tem perguntas diferentes</p>
+    <p class="cta-note">As perguntas são sorteadas — cada tentativa é diferente</p>
 
     <!-- ─── About blurb ── -->
     <div class="about-blurb">
@@ -56,7 +71,13 @@
 </template>
 
 <script setup lang="ts">
-defineEmits<{ start: [] }>()
+import { ref } from 'vue'
+import { QUIZ_MODES, type QuizMode } from '~/composables/useQuiz'
+
+defineEmits<{ start: [mode: QuizMode] }>()
+
+const modes = QUIZ_MODES
+const selectedMode = ref<QuizMode>(10)
 </script>
 
 <style scoped>
@@ -74,7 +95,7 @@ defineEmits<{ start: [] }>()
 .hero-section {
   position: relative;
   text-align: center;
-  padding: 2.5rem 1rem 2.25rem;
+  padding: 2rem 1rem 1.75rem;
   overflow: hidden;
 }
 
@@ -92,12 +113,12 @@ defineEmits<{ start: [] }>()
   position: relative;
   z-index: 1;
   display: inline-flex;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 .ordo-icon {
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
   box-shadow: 0 8px 32px rgba(23, 84, 207, 0.18), 0 2px 8px rgba(0,0,0,0.08);
 }
 
@@ -110,18 +131,18 @@ defineEmits<{ start: [] }>()
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #B8962E;
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
 }
 
 .hero-title {
   position: relative;
   z-index: 1;
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(3.2rem, 13vw, 5rem);
+  font-size: clamp(3rem, 13vw, 4.5rem);
   font-weight: 600;
   line-height: 1.0;
   color: #1C1917;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1rem;
 }
 .hero-title em {
   font-style: italic;
@@ -135,7 +156,7 @@ defineEmits<{ start: [] }>()
   align-items: center;
   gap: 0.75rem;
   max-width: 180px;
-  margin: 0 auto 1.1rem;
+  margin: 0 auto 0.9rem;
 }
 .ornament-line {
   flex: 1;
@@ -153,12 +174,83 @@ defineEmits<{ start: [] }>()
   position: relative;
   z-index: 1;
   font-family: 'Raleway', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 0.88rem;
   line-height: 1.65;
   color: #78716C;
   max-width: 280px;
   margin: 0 auto;
+}
+
+/* Mode selector */
+.mode-section {
+  margin-bottom: 1.25rem;
+}
+
+.mode-label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #78716C;
+  margin: 0 0 0.6rem;
+}
+
+.mode-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.mode-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.85rem 0.5rem;
+  background: white;
+  border: 2px solid #E7E5E4;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  gap: 0.1rem;
+}
+
+.mode-btn:hover {
+  border-color: #1754CF;
+  background: #EEF3FC;
+}
+
+.mode-btn--active {
+  border-color: #1754CF;
+  background: #EEF3FC;
+  box-shadow: 0 0 0 3px rgba(23, 84, 207, 0.12);
+}
+
+.mode-btn__questions {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #1C1917;
+}
+.mode-btn--active .mode-btn__questions {
+  color: #1754CF;
+}
+
+.mode-btn__label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #78716C;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mode-btn__desc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.62rem;
+  color: #A8A29E;
+  margin-top: 0.15rem;
 }
 
 /* CTA */
@@ -174,13 +266,13 @@ defineEmits<{ start: [] }>()
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  padding: 1.05rem 1.5rem;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
   box-shadow: 0 4px 20px rgba(23, 84, 207, 0.28);
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.6rem;
 }
 .cta-btn:hover {
   background: #1244A6;
@@ -203,7 +295,7 @@ defineEmits<{ start: [] }>()
   font-size: 0.72rem;
   color: #A8A29E;
   text-align: center;
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
 }
 
 /* About */

@@ -185,6 +185,7 @@ const props = defineProps<{
   scoreTitle: ScoreTitle
   answers: Answer[]
   questions: Question[]
+  modeLabel: string
 }>()
 
 defineEmits<{
@@ -209,7 +210,7 @@ const siteUrl = computed(() => config.public.siteUrl)
 
 const shareText = computed(
   () =>
-    `Fiz o Teste Anglicano e obtive ${props.score}/${props.total} pontos (${percentage.value}%)! 🏆 Meu título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji}\n\nFaça também: ${siteUrl.value} 📖 #anglicanismo #caminhoanglicano`
+    `Fiz o Teste Anglicano (${props.modeLabel}) e obtive ${props.score}/${props.total} pontos (${percentage.value}%)! 🏆 Meu título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji}\n\nFaça também: ${siteUrl.value} 📖 #anglicanismo #caminhoanglicano`
 )
 
 const whatsappUrl = computed(
@@ -219,7 +220,7 @@ const whatsappUrl = computed(
 const twitterUrl = computed(
   () =>
     `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-      `Fiz o Teste Anglicano: ${props.score}/${props.total} pontos (${percentage.value}%)! Título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji} #anglicanismo #caminhoanglicano`
+      `Fiz o Teste Anglicano (${props.modeLabel}): ${props.score}/${props.total} pontos (${percentage.value}%)! Título: "${props.scoreTitle.title}" ${props.scoreTitle.emoji} #anglicanismo #caminhoanglicano`
     )}&url=${encodeURIComponent(siteUrl.value)}`
 )
 
