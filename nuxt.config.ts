@@ -1,3 +1,5 @@
+import obfuscatorPlugin from 'vite-plugin-javascript-obfuscator'
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
   runtimeConfig: {
@@ -20,6 +22,28 @@ export default defineNuxtConfig({
     display: 'swap',
   },
   css: ['~/assets/css/main.css'],
+  vite: {
+    plugins: process.env.NODE_ENV === 'production' ? [
+      obfuscatorPlugin({
+        apply: 'build',
+        debugger: false,
+        options: {
+          compact: true,
+          controlFlowFlattening: true,
+          controlFlowFlatteningThreshold: 0.5,
+          deadCodeInjection: false,
+          identifierNamesGenerator: 'hexadecimal',
+          renameGlobals: false,
+          stringArray: true,
+          stringArrayEncoding: ['base64'],
+          stringArrayThreshold: 0.75,
+          selfDefending: false,
+          splitStrings: true,
+          splitStringsChunkLength: 8,
+        },
+      }),
+    ] : [],
+  },
   app: {
     head: {
       title: 'Teste Anglicano | Caminho Anglicano',
