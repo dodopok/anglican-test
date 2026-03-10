@@ -39,7 +39,7 @@ export const allQuestions: Question[] = [
   {
     id: 1,
     question: 'Qual é o nome do principal livro de orações anglicano?',
-    options: ['Livro de Oração Comum', 'Catecismo Romano', 'Confissão de Westminster', 'Didaquê'],
+    options: ['Livro de Oração Comum', 'Confissão de Westminster', 'Didaquê', 'Catecismo Romano'],
     correctIndex: 0,
     difficulty: 1,
     category: 'LOC & Orações',
@@ -49,8 +49,8 @@ export const allQuestions: Question[] = [
   {
     id: 2,
     question: 'Em que país nasceu o anglicanismo?',
-    options: ['Inglaterra', 'Alemanha', 'Suíça', 'França'],
-    correctIndex: 0,
+    options: ['França', 'Suíça', 'Inglaterra', 'Alemanha'],
+    correctIndex: 2,
     difficulty: 1,
     category: 'História',
     explanation:
@@ -59,8 +59,8 @@ export const allQuestions: Question[] = [
   {
     id: 3,
     question: 'Qual foi o rei inglês que iniciou a separação da Igreja da Inglaterra com Roma?',
-    options: ['Henrique VIII', 'Carlos I', 'Eduardo VI', 'Ricardo II'],
-    correctIndex: 0,
+    options: ['Eduardo VI', 'Henrique VIII', 'Ricardo II', 'Carlos I'],
+    correctIndex: 1,
     difficulty: 1,
     category: 'História',
     explanation:
@@ -69,7 +69,7 @@ export const allQuestions: Question[] = [
   {
     id: 4,
     question: 'Qual é a cidade sede da Comunhão Anglicana mundial?',
-    options: ['Canterbury', 'Londres', 'Oxford', 'York'],
+    options: ['Canterbury', 'Londres', 'York', 'Oxford'],
     correctIndex: 0,
     difficulty: 1,
     category: 'História',
@@ -79,8 +79,8 @@ export const allQuestions: Question[] = [
   {
     id: 5,
     question: 'Quantos sacramentos a maioria das igrejas anglicanas reconhece como sacramentos do Evangelho?',
-    options: ['Dois (Batismo e Eucaristia)', 'Sete (como na Igreja Católica Romana)', 'Um único: apenas o Batismo', 'Três: Batismo, Ceia e Unção'],
-    correctIndex: 0,
+    options: ['Três: Batismo, Ceia e Unção', 'Um único: apenas o Batismo', 'Dois (Batismo e Eucaristia)', 'Sete (como na Igreja Católica Romana)'],
+    correctIndex: 2,
     difficulty: 1,
     category: 'Teologia',
     explanation:
@@ -89,7 +89,7 @@ export const allQuestions: Question[] = [
   {
     id: 6,
     question: 'Qual é a cor litúrgica do Tempo do Natal e das festas do Senhor?',
-    options: ['Branco', 'Verde', 'Roxo', 'Vermelho'],
+    options: ['Branco', 'Vermelho', 'Roxo', 'Verde'],
     correctIndex: 0,
     difficulty: 1,
     category: 'Calendário Litúrgico',
@@ -99,12 +99,7 @@ export const allQuestions: Question[] = [
   {
     id: 7,
     question: 'O que celebra o Domingo de Pentecostes?',
-    options: [
-      'A descida do Espírito Santo sobre os apóstolos',
-      'A ressurreição de Jesus',
-      'O nascimento de Jesus',
-      'A ascensão de Jesus ao céu',
-    ],
+    options: ['A descida do Espírito Santo sobre os apóstolos', 'O nascimento de Jesus', 'A ressurreição de Jesus', 'A ascensão de Jesus ao céu'],
     correctIndex: 0,
     difficulty: 1,
     category: 'Calendário Litúrgico',
@@ -114,8 +109,8 @@ export const allQuestions: Question[] = [
   {
     id: 8,
     question: 'Qual oração Jesus ensinou a seus discípulos e é central no culto anglicano?',
-    options: ['Pai Nosso', 'Ave Maria', 'Salve Rainha', 'Magnificat'],
-    correctIndex: 0,
+    options: ['Magnificat', 'Ave Maria', 'Salve Rainha', 'Pai Nosso'],
+    correctIndex: 3,
     difficulty: 1,
     category: 'LOC & Orações',
     explanation:
@@ -124,8 +119,8 @@ export const allQuestions: Question[] = [
   {
     id: 9,
     question: 'Qual instrumento musical é historicamente central no culto anglicano?',
-    options: ['Órgão de tubos', 'Violão', 'Pandeiro', 'Flauta'],
-    correctIndex: 0,
+    options: ['Flauta', 'Pandeiro', 'Violão', 'Órgão de tubos'],
+    correctIndex: 3,
     difficulty: 1,
     category: 'Liturgia',
     explanation:
@@ -134,13 +129,8 @@ export const allQuestions: Question[] = [
   {
     id: 10,
     question: 'Por qual país vieram os primeiros missionários anglicanos que evangelizaram brasileiros no século XIX?',
-    options: [
-      'Estados Unidos (Igreja Episcopal Americana)',
-      'Inglaterra (Igreja da Inglaterra)',
-      'Canadá (Igreja Anglicana do Canadá)',
-      'Escócia (Igreja Episcopal Escocesa)',
-    ],
-    correctIndex: 0,
+    options: ['Canadá (Igreja Anglicana do Canadá)', 'Inglaterra (Igreja da Inglaterra)', 'Escócia (Igreja Episcopal Escocesa)', 'Estados Unidos (Igreja Episcopal Americana)'],
+    correctIndex: 3,
     difficulty: 1,
     category: 'Brasil Anglicano',
     explanation:
@@ -149,13 +139,8 @@ export const allQuestions: Question[] = [
   {
     id: 11,
     question: 'O que é o "Pai Nosso" na tradição anglicana?',
-    options: [
-      'A Oração do Senhor, ensinada por Jesus',
-      'Uma oração de São Francisco de Assis',
-      'Um hino do Livro de Oração Comum',
-      'Uma litania pelos defuntos',
-    ],
-    correctIndex: 0,
+    options: ['Uma litania pelos defuntos', 'A Oração do Senhor, ensinada por Jesus', 'Uma oração de São Francisco de Assis', 'Um hino do Livro de Oração Comum'],
+    correctIndex: 1,
     difficulty: 1,
     category: 'LOC & Orações',
     explanation:
@@ -164,7 +149,7 @@ export const allQuestions: Question[] = [
   {
     id: 12,
     question: 'Qual é o dia mais importante do calendário cristão anglicano?',
-    options: ['A Páscoa (Ressurreição do Senhor)', 'O Natal', 'Pentecostes', 'Epifania'],
+    options: ['A Páscoa (Ressurreição do Senhor)', 'Epifania', 'O Natal', 'Pentecostes'],
     correctIndex: 0,
     difficulty: 1,
     category: 'Calendário Litúrgico',
@@ -176,8 +161,8 @@ export const allQuestions: Question[] = [
   {
     id: 13,
     question: 'Quem foi o primeiro Arcebispo de Cantuária da era anglicana?',
-    options: ['Thomas Cranmer', 'William Laud', 'Matthew Parker', 'Thomas Becket'],
-    correctIndex: 0,
+    options: ['Thomas Becket', 'Matthew Parker', 'William Laud', 'Thomas Cranmer'],
+    correctIndex: 3,
     difficulty: 2,
     category: 'Figuras Históricas',
     explanation:
@@ -186,7 +171,7 @@ export const allQuestions: Question[] = [
   {
     id: 14,
     question: 'Em que século aconteceu a Reforma Anglicana?',
-    options: ['Século XVI', 'Século XV', 'Século XVII', 'Século XVIII'],
+    options: ['Século XVI', 'Século XV', 'Século XVIII', 'Século XVII'],
     correctIndex: 0,
     difficulty: 2,
     category: 'História',
@@ -196,12 +181,7 @@ export const allQuestions: Question[] = [
   {
     id: 15,
     question: 'O que é a Quaresma no calendário litúrgico anglicano?',
-    options: [
-      'Período de 40 dias de penitência antes da Páscoa',
-      'Período de celebração após a Páscoa',
-      'O tempo litúrgico que precede o Natal',
-      'A semana que precede o Pentecostes',
-    ],
+    options: ['Período de 40 dias de penitência antes da Páscoa', 'Período de celebração após a Páscoa', 'A semana que precede o Pentecostes', 'O tempo litúrgico que precede o Natal'],
     correctIndex: 0,
     difficulty: 2,
     category: 'Calendário Litúrgico',
@@ -211,7 +191,7 @@ export const allQuestions: Question[] = [
   {
     id: 16,
     question: 'Qual cor litúrgica é usada durante a Quaresma e o Advento na tradição anglicana?',
-    options: ['Roxo/Violeta', 'Verde', 'Vermelho', 'Branco'],
+    options: ['Roxo/Violeta', 'Verde', 'Branco', 'Vermelho'],
     correctIndex: 0,
     difficulty: 2,
     category: 'Calendário Litúrgico',
@@ -221,8 +201,8 @@ export const allQuestions: Question[] = [
   {
     id: 17,
     question: 'Qual rainha inglesa consolidou o anglicanismo no século XVI?',
-    options: ['Elizabeth I', 'Maria Tudor', 'Lady Jane Grey', 'Ana Bolena'],
-    correctIndex: 0,
+    options: ['Lady Jane Grey', 'Elizabeth I', 'Ana Bolena', 'Maria Tudor'],
+    correctIndex: 1,
     difficulty: 2,
     category: 'Figuras Históricas',
     explanation:
@@ -231,13 +211,8 @@ export const allQuestions: Question[] = [
   {
     id: 18,
     question: 'O que é o Advento no calendário litúrgico?',
-    options: [
-      'Período de quatro semanas de preparação para o Natal',
-      'O período de cinquenta dias de celebração após a Páscoa',
-      'O período penitencial de quarenta dias antes da Páscoa',
-      'A semana santa que culmina na Sexta-feira da Paixão',
-    ],
-    correctIndex: 0,
+    options: ['O período penitencial de quarenta dias antes da Páscoa', 'O período de cinquenta dias de celebração após a Páscoa', 'Período de quatro semanas de preparação para o Natal', 'A semana santa que culmina na Sexta-feira da Paixão'],
+    correctIndex: 2,
     difficulty: 2,
     category: 'Calendário Litúrgico',
     explanation:
@@ -246,8 +221,8 @@ export const allQuestions: Question[] = [
   {
     id: 19,
     question: 'Qual é a profissão de fé mais antiga usada no batismo e nos ofícios anglicanos?',
-    options: ['Credo Apostólico', 'Credo Niceno', 'Credo Atanasiano', 'Confissão de Westminster'],
-    correctIndex: 0,
+    options: ['Credo Atanasiano', 'Credo Niceno', 'Credo Apostólico', 'Confissão de Westminster'],
+    correctIndex: 2,
     difficulty: 2,
     category: 'Liturgia',
     explanation:
@@ -256,13 +231,8 @@ export const allQuestions: Question[] = [
   {
     id: 20,
     question: 'O que é o "Te Deum"?',
-    options: [
-      'Um hino de louvor usado no culto desde a Antiguidade',
-      'Uma oração de confissão de pecados',
-      'Um salmo penitencial da Quaresma',
-      'Uma oração pelos defuntos',
-    ],
-    correctIndex: 0,
+    options: ['Uma oração pelos defuntos', 'Um salmo penitencial da Quaresma', 'Uma oração de confissão de pecados', 'Um hino de louvor usado no culto desde a Antiguidade'],
+    correctIndex: 3,
     difficulty: 2,
     category: 'Liturgia',
     explanation:
@@ -271,8 +241,8 @@ export const allQuestions: Question[] = [
   {
     id: 21,
     question: 'Quem fundou o metodismo, movimento que nasceu dentro do anglicanismo?',
-    options: ['John Wesley', 'George Whitefield', 'Charles Spurgeon', 'Jonathan Edwards'],
-    correctIndex: 0,
+    options: ['Charles Spurgeon', 'George Whitefield', 'Jonathan Edwards', 'John Wesley'],
+    correctIndex: 3,
     difficulty: 2,
     category: 'Figuras Históricas',
     explanation:
@@ -281,13 +251,8 @@ export const allQuestions: Question[] = [
   {
     id: 22,
     question: 'O que é o "Magnificat" na liturgia anglicana?',
-    options: [
-      'O cântico de Maria, registrado em Lucas 1:46-55',
-      'Uma oração eucarística',
-      'Um salmo da Quaresma',
-      'O hino de abertura do Advento',
-    ],
-    correctIndex: 0,
+    options: ['Uma oração eucarística', 'O hino de abertura do Advento', 'O cântico de Maria, registrado em Lucas 1:46-55', 'Um salmo da Quaresma'],
+    correctIndex: 2,
     difficulty: 2,
     category: 'Liturgia',
     explanation:
@@ -296,8 +261,8 @@ export const allQuestions: Question[] = [
   {
     id: 23,
     question: 'Qual é o nome da oração pelo mundo e pelas necessidades da comunidade no culto anglicano?',
-    options: ['Oração dos Fiéis (ou Intercessões)', 'Confissão Geral', 'Coleta', 'Prefácio'],
-    correctIndex: 0,
+    options: ['Confissão Geral', 'Coleta', 'Prefácio', 'Oração dos Fiéis (ou Intercessões)'],
+    correctIndex: 3,
     difficulty: 2,
     category: 'Liturgia',
     explanation:
@@ -306,8 +271,8 @@ export const allQuestions: Question[] = [
   {
     id: 24,
     question: 'Qual é a cor litúrgica do Tempo Comum (Tempo do Reino)?',
-    options: ['Verde', 'Branco', 'Roxo', 'Vermelho'],
-    correctIndex: 0,
+    options: ['Roxo', 'Vermelho', 'Verde', 'Branco'],
+    correctIndex: 2,
     difficulty: 2,
     category: 'Calendário Litúrgico',
     explanation:
@@ -318,8 +283,8 @@ export const allQuestions: Question[] = [
   {
     id: 25,
     question: 'Em que ano foi publicada a primeira edição do Book of Common Prayer (Livro de Oração Comum)?',
-    options: ['1549', '1534', '1563', '1611'],
-    correctIndex: 0,
+    options: ['1534', '1563', '1611', '1549'],
+    correctIndex: 3,
     difficulty: 3,
     category: 'História',
     explanation:
@@ -328,7 +293,7 @@ export const allQuestions: Question[] = [
   {
     id: 26,
     question: 'Quantos Artigos compõem a confissão de fé anglicana?',
-    options: ['39', '25', '33', '42'],
+    options: ['39', '33', '25', '42'],
     correctIndex: 0,
     difficulty: 3,
     category: 'Teologia',
@@ -338,13 +303,8 @@ export const allQuestions: Question[] = [
   {
     id: 27,
     question: 'O que é a "Via Media" no anglicanismo?',
-    options: [
-      'O caminho do meio entre o catolicismo romano e o protestantismo',
-      'Uma antiga rota de peregrinagem medieval entre Londres e Canterbury',
-      'O nome de uma das formas litúrgicas do Livro de Oração Comum',
-      'A posição oficial anglicana sobre a autoridade do bispo de Roma',
-    ],
-    correctIndex: 0,
+    options: ['O nome de uma das formas litúrgicas do Livro de Oração Comum', 'O caminho do meio entre o catolicismo romano e o protestantismo', 'A posição oficial anglicana sobre a autoridade do bispo de Roma', 'Uma antiga rota de peregrinagem medieval entre Londres e Canterbury'],
+    correctIndex: 1,
     difficulty: 3,
     category: 'Teologia',
     explanation:
@@ -353,8 +313,8 @@ export const allQuestions: Question[] = [
   {
     id: 28,
     question: 'Em que ano foi aprovado o Ato de Supremacia, declarando Henrique VIII chefe da Igreja da Inglaterra?',
-    options: ['1534', '1517', '1549', '1521'],
-    correctIndex: 0,
+    options: ['1517', '1521', '1534', '1549'],
+    correctIndex: 2,
     difficulty: 3,
     category: 'História',
     explanation:
@@ -363,7 +323,7 @@ export const allQuestions: Question[] = [
   {
     id: 29,
     question: 'Quem escreveu os 42 Artigos originais, que depois se tornaram os 39 Artigos?',
-    options: ['Thomas Cranmer', 'John Jewel', 'Richard Hooker', 'Matthew Parker'],
+    options: ['Thomas Cranmer', 'Matthew Parker', 'Richard Hooker', 'John Jewel'],
     correctIndex: 0,
     difficulty: 3,
     category: 'Figuras Históricas',
@@ -373,12 +333,7 @@ export const allQuestions: Question[] = [
   {
     id: 30,
     question: 'O que é o Credo Niceno e quando é usado na liturgia anglicana?',
-    options: [
-      'Profissão de fé do Concílio de Niceia (325); usada na Eucaristia dominical',
-      'Profissão de fé do Concílio de Trento (1545); usada somente nas grandes festas',
-      'Profissão de fé do Concílio de Calcedônia (451); reservada ao rito do Batismo',
-      'Credo medieval de origem monástica; usado apenas durante a Quaresma',
-    ],
+    options: ['Profissão de fé do Concílio de Niceia (325); usada na Eucaristia dominical', 'Profissão de fé do Concílio de Calcedônia (451); reservada ao rito do Batismo', 'Credo medieval de origem monástica; usado apenas durante a Quaresma', 'Profissão de fé do Concílio de Trento (1545); usada somente nas grandes festas'],
     correctIndex: 0,
     difficulty: 3,
     category: 'Liturgia',
@@ -388,12 +343,7 @@ export const allQuestions: Question[] = [
   {
     id: 31,
     question: 'O que é o "Ofício Diário" na tradição anglicana?',
-    options: [
-      'A oração rítmica ao longo do dia: Oração da Manhã e Oração da Tarde',
-      'A celebração eucarística (Missa) realizada pelo clero todos os dias',
-      'A confissão individual de pecados feita ao sacerdote diariamente',
-      'O ensino do catecismo anglicano ministrado diariamente às crianças',
-    ],
+    options: ['A oração rítmica ao longo do dia: Oração da Manhã e Oração da Tarde', 'O ensino do catecismo anglicano ministrado diariamente às crianças', 'A celebração eucarística (Missa) realizada pelo clero todos os dias', 'A confissão individual de pecados feita ao sacerdote diariamente'],
     correctIndex: 0,
     difficulty: 3,
     category: 'LOC & Orações',
@@ -403,12 +353,7 @@ export const allQuestions: Question[] = [
   {
     id: 32,
     question: 'Qual é o período litúrgico entre o Natal e a Quarta-feira de Cinzas?',
-    options: [
-      'Epifania (Tempo após o Natal)',
-      'Tempo Pascal',
-      'Advento',
-      'Pentecostes',
-    ],
+    options: ['Epifania (Tempo após o Natal)', 'Advento', 'Pentecostes', 'Tempo Pascal'],
     correctIndex: 0,
     difficulty: 3,
     category: 'Calendário Litúrgico',
@@ -418,13 +363,8 @@ export const allQuestions: Question[] = [
   {
     id: 33,
     question: 'Em que região do Brasil se concentrou o início da missão anglicana entre brasileiros, no final do século XIX?',
-    options: [
-      'Sul do Brasil, especialmente no Rio Grande do Sul',
-      'Nordeste, em Pernambuco e Bahia',
-      'Sudeste, em São Paulo e Rio de Janeiro',
-      'Norte, na região Amazônica',
-    ],
-    correctIndex: 0,
+    options: ['Sudeste, em São Paulo e Rio de Janeiro', 'Norte, na região Amazônica', 'Nordeste, em Pernambuco e Bahia', 'Sul do Brasil, especialmente no Rio Grande do Sul'],
+    correctIndex: 3,
     difficulty: 3,
     category: 'Brasil Anglicano',
     explanation:
@@ -433,13 +373,8 @@ export const allQuestions: Question[] = [
   {
     id: 34,
     question: 'O que é a "Confissão Geral" no culto anglicano?',
-    options: [
-      'Uma oração de confissão de pecados feita coletivamente pela congregação',
-      'A confissão auricular feita individualmente ao sacerdote antes da comunhão',
-      'Um dos documentos teológicos normativos incluídos nos 39 Artigos da Religião',
-      'A leitura solene dos Dez Mandamentos pelo sacerdote antes da Eucaristia',
-    ],
-    correctIndex: 0,
+    options: ['A confissão auricular feita individualmente ao sacerdote antes da comunhão', 'Um dos documentos teológicos normativos incluídos nos 39 Artigos da Religião', 'Uma oração de confissão de pecados feita coletivamente pela congregação', 'A leitura solene dos Dez Mandamentos pelo sacerdote antes da Eucaristia'],
+    correctIndex: 2,
     difficulty: 3,
     category: 'Liturgia',
     explanation:
@@ -448,13 +383,8 @@ export const allQuestions: Question[] = [
   {
     id: 35,
     question: 'Qual foi a contribuição de William Tyndale para o anglicanismo?',
-    options: [
-      'Traduziu a Bíblia para o inglês; mártir da Reforma protestante inglesa',
-      'Redigiu os 39 Artigos da Religião; base doutrinal da Igreja da Inglaterra',
-      'Fundou a Diocese de Canterbury após a ruptura com Roma em 1534',
-      'Introduziu o repertório coral polifônico nas catedrais anglicanas reformadas',
-    ],
-    correctIndex: 0,
+    options: ['Fundou a Diocese de Canterbury após a ruptura com Roma em 1534', 'Traduziu a Bíblia para o inglês; mártir da Reforma protestante inglesa', 'Introduziu o repertório coral polifônico nas catedrais anglicanas reformadas', 'Redigiu os 39 Artigos da Religião; base doutrinal da Igreja da Inglaterra'],
+    correctIndex: 1,
     difficulty: 3,
     category: 'Figuras Históricas',
     explanation:
@@ -463,8 +393,8 @@ export const allQuestions: Question[] = [
   {
     id: 36,
     question: 'Qual é o nome do serviço litúrgico anglicano de canto vespertino em catedrais?',
-    options: ['Evensong', 'Compline', 'Lauds', 'Benedictus'],
-    correctIndex: 0,
+    options: ['Benedictus', 'Compline', 'Evensong', 'Lauds'],
+    correctIndex: 2,
     difficulty: 3,
     category: 'Liturgia',
     explanation:
@@ -475,13 +405,8 @@ export const allQuestions: Question[] = [
   {
     id: 37,
     question: 'O que é a "Lambeth Conference"?',
-    options: [
-      'Reunião dos bispos de toda a Comunhão Anglicana, realizada a cada dez anos',
-      'O conselho permanente de bispos que governa a Igreja da Inglaterra',
-      'O tribunal eclesiástico que julga causas canônicas em Canterbury',
-      'O sínodo geral dos bispos, clérigos e leigos da Igreja da Inglaterra',
-    ],
-    correctIndex: 0,
+    options: ['O tribunal eclesiástico que julga causas canônicas em Canterbury', 'Reunião dos bispos de toda a Comunhão Anglicana, realizada a cada dez anos', 'O conselho permanente de bispos que governa a Igreja da Inglaterra', 'O sínodo geral dos bispos, clérigos e leigos da Igreja da Inglaterra'],
+    correctIndex: 1,
     difficulty: 4,
     category: 'História',
     explanation:
@@ -490,12 +415,7 @@ export const allQuestions: Question[] = [
   {
     id: 38,
     question: 'Quem foi Richard Hooker e qual sua importância para a teologia anglicana?',
-    options: [
-      'Teólogo do século XVI que fundamentou a teologia anglicana em "Of the Laws of Ecclesiastical Polity"',
-      'Arcebispo de Cantuária que liderou a consolidação da Reforma sob Elizabeth I',
-      'Missionário inglês que chefiou a evangelização anglicana no Brasil no século XIX',
-      'Teólogo responsável pela redação definitiva dos 39 Artigos da Religião em 1571',
-    ],
+    options: ['Teólogo do século XVI que fundamentou a teologia anglicana em "Of the Laws of Ecclesiastical Polity"', 'Arcebispo de Cantuária que liderou a consolidação da Reforma sob Elizabeth I', 'Teólogo responsável pela redação definitiva dos 39 Artigos da Religião em 1571', 'Missionário inglês que chefiou a evangelização anglicana no Brasil no século XIX'],
     correctIndex: 0,
     difficulty: 4,
     category: 'Figuras Históricas',
@@ -505,12 +425,7 @@ export const allQuestions: Question[] = [
   {
     id: 39,
     question: 'O que é o "Quadrilátero de Chicago-Lambeth" (1888)?',
-    options: [
-      'Quatro princípios anglicanos para a unidade cristã: Escrituras, Credos, Sacramentos e Episcopado histórico',
-      'Quatro dioceses fundadoras da Igreja Episcopal nas Américas reunidas em Chicago em 1886',
-      'Um acordo de plena comunhão entre igrejas anglicanas e luteranas da Europa do Norte',
-      'As quatro fontes da teologia anglicana: Escritura, Tradição, Razão e Experiência',
-    ],
+    options: ['Quatro princípios anglicanos para a unidade cristã: Escrituras, Credos, Sacramentos e Episcopado histórico', 'Um acordo de plena comunhão entre igrejas anglicanas e luteranas da Europa do Norte', 'As quatro fontes da teologia anglicana: Escritura, Tradição, Razão e Experiência', 'Quatro dioceses fundadoras da Igreja Episcopal nas Américas reunidas em Chicago em 1886'],
     correctIndex: 0,
     difficulty: 4,
     category: 'Teologia',
@@ -520,13 +435,8 @@ export const allQuestions: Question[] = [
   {
     id: 40,
     question: 'O que significa o princípio "lex orandi, lex credendi" e como se aplica ao anglicanismo?',
-    options: [
-      '"A lei da oração é a lei da crença" — a liturgia forma e expressa a teologia anglicana',
-      '"A lei da Escritura é a lei da Igreja" — princípio dos 39 Artigos',
-      '"A lei dos sínodos é a lei da fé" — princípio de governança eclesiástica',
-      '"A lei do amor é a lei do cristão" — ética anglicana',
-    ],
-    correctIndex: 0,
+    options: ['"A lei da Escritura é a lei da Igreja" — princípio dos 39 Artigos', '"A lei do amor é a lei do cristão" — ética anglicana', '"A lei dos sínodos é a lei da fé" — princípio de governança eclesiástica', '"A lei da oração é a lei da crença" — a liturgia forma e expressa a teologia anglicana'],
+    correctIndex: 3,
     difficulty: 4,
     category: 'Teologia',
     explanation:
@@ -535,8 +445,8 @@ export const allQuestions: Question[] = [
   {
     id: 41,
     question: 'Em que ano Thomas Cranmer foi queimado na fogueira e em que cidade?',
-    options: ['1556, em Oxford', '1549, em Londres', '1563, em Canterbury', '1547, em York'],
-    correctIndex: 0,
+    options: ['1547, em York', '1556, em Oxford', '1563, em Canterbury', '1549, em Londres'],
+    correctIndex: 1,
     difficulty: 4,
     category: 'Figuras Históricas',
     explanation:
@@ -545,13 +455,8 @@ export const allQuestions: Question[] = [
   {
     id: 42,
     question: 'O que é o "Acordo de Porvoo" no contexto da Comunhão Anglicana?',
-    options: [
-      'Acordo de plena comunhão entre igrejas anglicanas britânicas/irlandesas e igrejas luteranas nórdicas (1992)',
-      'Acordo de diálogo teológico entre a Igreja da Inglaterra e a Igreja Católica Romana',
-      'Documento da Comunhão Anglicana definindo os critérios para a ordenação de mulheres',
-      'Tratado de plena comunhão entre igrejas anglicanas britânicas e presbiterianas escocesas',
-    ],
-    correctIndex: 0,
+    options: ['Tratado de plena comunhão entre igrejas anglicanas britânicas e presbiterianas escocesas', 'Acordo de diálogo teológico entre a Igreja da Inglaterra e a Igreja Católica Romana', 'Acordo de plena comunhão entre igrejas anglicanas britânicas/irlandesas e igrejas luteranas nórdicas (1992)', 'Documento da Comunhão Anglicana definindo os critérios para a ordenação de mulheres'],
+    correctIndex: 2,
     difficulty: 4,
     category: 'História',
     explanation:
@@ -560,13 +465,8 @@ export const allQuestions: Question[] = [
   {
     id: 43,
     question: 'Quem foi William Wilberforce e qual sua relação com o anglicanismo?',
-    options: [
-      'Político anglicano evangelicalista que liderou o movimento abolicionista britânico no século XIX',
-      'Arcebispo de Cantuária que condenou a escravidão no século XVIII',
-      'Fundador do movimento evangélico dentro do anglicanismo',
-      'Missionário anglicano que evangelizou a África subsaariana',
-    ],
-    correctIndex: 0,
+    options: ['Fundador do movimento evangélico dentro do anglicanismo', 'Missionário anglicano que evangelizou a África subsaariana', 'Político anglicano evangelicalista que liderou o movimento abolicionista britânico no século XIX', 'Arcebispo de Cantuária que condenou a escravidão no século XVIII'],
+    correctIndex: 2,
     difficulty: 4,
     category: 'Figuras Históricas',
     explanation:
@@ -575,13 +475,8 @@ export const allQuestions: Question[] = [
   {
     id: 44,
     question: 'O que é o "Movimento de Oxford" (Tractarianismo) do século XIX?',
-    options: [
-      'Movimento que buscou reafirmar as raízes católicas do anglicanismo, contra o liberalismo e o regalismo',
-      'Um movimento de renovação carismática e pentecostal surgido dentro do anglicanismo inglês',
-      'A fundação das primeiras faculdades de teologia anglicana autônomas no século XIX',
-      'Um movimento missionário anglicano voltado à evangelização das colônias britânicas',
-    ],
-    correctIndex: 0,
+    options: ['A fundação das primeiras faculdades de teologia anglicana autônomas no século XIX', 'Um movimento de renovação carismática e pentecostal surgido dentro do anglicanismo inglês', 'Movimento que buscou reafirmar as raízes católicas do anglicanismo, contra o liberalismo e o regalismo', 'Um movimento missionário anglicano voltado à evangelização das colônias britânicas'],
+    correctIndex: 2,
     difficulty: 4,
     category: 'História',
     explanation:
@@ -590,12 +485,7 @@ export const allQuestions: Question[] = [
   {
     id: 45,
     question: 'Quem foi John Henry Newman e qual seu papel no anglicanismo e além?',
-    options: [
-      'Principal líder do Movimento de Oxford que depois se converteu ao catolicismo romano (1845) e foi cardeal',
-      'Fundador do metodismo anglicano que jamais abandonou formalmente a Igreja da Inglaterra',
-      'Arcebispo de York que liderou a consolidação teológica do anglicanismo no século XIX',
-      'Arcebispo de Canterbury responsável pela revisão canônica definitiva do LOC de 1662',
-    ],
+    options: ['Principal líder do Movimento de Oxford que depois se converteu ao catolicismo romano (1845) e foi cardeal', 'Arcebispo de Canterbury responsável pela revisão canônica definitiva do LOC de 1662', 'Arcebispo de York que liderou a consolidação teológica do anglicanismo no século XIX', 'Fundador do metodismo anglicano que jamais abandonou formalmente a Igreja da Inglaterra'],
     correctIndex: 0,
     difficulty: 4,
     category: 'Figuras Históricas',
@@ -607,12 +497,7 @@ export const allQuestions: Question[] = [
   {
     id: 46,
     question: 'O que é a "teologia das três fontes" (Escritura, Tradição e Razão) e a qual teólogo anglicano é atribuída?',
-    options: [
-      'Richard Hooker formulou que Escritura, Tradição e Razão são as fontes do conhecimento teológico anglicano',
-      'Thomas Cranmer propôs que Escritura, Catecismo e Credos são os fundamentos anglicanos',
-      'William Laud definiu Escritura, Tradição e Experiência como as três fontes',
-      'John Jewel formulou Escritura, Concílios e Papado como as três fontes reformadas',
-    ],
+    options: ['Richard Hooker formulou que Escritura, Tradição e Razão são as fontes do conhecimento teológico anglicano', 'William Laud definiu Escritura, Tradição e Experiência como as três fontes', 'John Jewel formulou Escritura, Concílios e Papado como as três fontes reformadas', 'Thomas Cranmer propôs que Escritura, Catecismo e Credos são os fundamentos anglicanos'],
     correctIndex: 0,
     difficulty: 5,
     category: 'Teologia',
@@ -622,13 +507,8 @@ export const allQuestions: Question[] = [
   {
     id: 47,
     question: 'O que declarou a Bula "Apostolicae Curae" (1896) do Papa Leão XIII sobre o anglicanismo?',
-    options: [
-      'Que as ordens sagradas anglicanas são "absolutamente nulas e completamente vazias"',
-      'Que os anglicanos são cristãos válidos apesar das diferenças',
-      'Que o anglicanismo é um ramo legítimo da Igreja Católica',
-      'Que os bispos anglicanos perdem a sucessão apostólica ao se casarem',
-    ],
-    correctIndex: 0,
+    options: ['Que os anglicanos são cristãos válidos apesar das diferenças', 'Que as ordens sagradas anglicanas são "absolutamente nulas e completamente vazias"', 'Que os bispos anglicanos perdem a sucessão apostólica ao se casarem', 'Que o anglicanismo é um ramo legítimo da Igreja Católica'],
+    correctIndex: 1,
     difficulty: 5,
     category: 'Teologia',
     explanation:
@@ -637,13 +517,8 @@ export const allQuestions: Question[] = [
   {
     id: 48,
     question: 'O que é o ARCIC e qual sua relevância para o ecumenismo?',
-    options: [
-      'Comissão Internacional Anglicana-Católica Romana para diálogo ecumênico, iniciada em 1970',
-      'Aliança Reformada das principais Igrejas Cristãs da Comunidade Britânica (Commonwealth)',
-      'Associação de Reitores e Clérigos das Igrejas Cristãs das Américas, fundada em 1968',
-      'Comissão de diálogo teológico entre a Igreja da Inglaterra e as Igrejas Ortodoxas orientais',
-    ],
-    correctIndex: 0,
+    options: ['Associação de Reitores e Clérigos das Igrejas Cristãs das Américas, fundada em 1968', 'Comissão de diálogo teológico entre a Igreja da Inglaterra e as Igrejas Ortodoxas orientais', 'Aliança Reformada das principais Igrejas Cristãs da Comunidade Britânica (Commonwealth)', 'Comissão Internacional Anglicana-Católica Romana para diálogo ecumênico, iniciada em 1970'],
+    correctIndex: 3,
     difficulty: 5,
     category: 'História',
     explanation:
@@ -652,13 +527,8 @@ export const allQuestions: Question[] = [
   {
     id: 49,
     question: 'Qual foi a principal questão debatida na Resolução 1.10 da Conferência de Lambeth de 1998?',
-    options: [
-      'Homossexualidade e a visão anglicana da sexualidade humana',
-      'A ordenação de mulheres ao episcopado',
-      'A plena comunhão com igrejas luteranas',
-      'A posição anglicana sobre o divórcio e novo casamento',
-    ],
-    correctIndex: 0,
+    options: ['A plena comunhão com igrejas luteranas', 'A ordenação de mulheres ao episcopado', 'A posição anglicana sobre o divórcio e novo casamento', 'Homossexualidade e a visão anglicana da sexualidade humana'],
+    correctIndex: 3,
     difficulty: 5,
     category: 'História',
     explanation:
@@ -667,13 +537,8 @@ export const allQuestions: Question[] = [
   {
     id: 50,
     question: 'O que distingue a teologia eucarística anglicana da luterana (consubstanciação) e da reformada (memorialismo)?',
-    options: [
-      'Anglicanos afirmam presença real espiritual, sem definir o modo — nem transubstanciação nem consubstanciação',
-      'Anglicanos adotam a transubstanciação romana: o pão e o vinho se tornam o corpo e sangue de Cristo',
-      'Anglicanos seguem o memorialismo de Zuínglio: a Ceia é apenas memorial simbólico, sem presença real',
-      'Anglicanos seguem Calvino: Cristo está presente no céu, e o fiel se une a ele espiritualmente na Ceia',
-    ],
-    correctIndex: 0,
+    options: ['Anglicanos adotam a transubstanciação romana: o pão e o vinho se tornam o corpo e sangue de Cristo', 'Anglicanos seguem Calvino: Cristo está presente no céu, e o fiel se une a ele espiritualmente na Ceia', 'Anglicanos seguem o memorialismo de Zuínglio: a Ceia é apenas memorial simbólico, sem presença real', 'Anglicanos afirmam presença real espiritual, sem definir o modo — nem transubstanciação nem consubstanciação'],
+    correctIndex: 3,
     difficulty: 5,
     category: 'Teologia',
     explanation:
@@ -682,13 +547,8 @@ export const allQuestions: Question[] = [
   {
     id: 51,
     question: 'Qual foi a revisão do Book of Common Prayer de 1662 e qual seu contexto histórico?',
-    options: [
-      'Foi a revisão após a Restauração Stuart (Carlos II), que se tornou a versão canônica definitiva na Igreja da Inglaterra',
-      'Foi a revisão do LOC durante o Commonwealth de Cromwell, mais puritana',
-      'Foi a revisão mandada por Elizabeth I para estabelecer o Estabelecimento Elisabetano',
-      'Foi a revisão solicitada pelos bispos no Concílio de Trento',
-    ],
-    correctIndex: 0,
+    options: ['Foi a revisão do LOC durante o Commonwealth de Cromwell, mais puritana', 'Foi a revisão após a Restauração Stuart (Carlos II), que se tornou a versão canônica definitiva na Igreja da Inglaterra', 'Foi a revisão mandada por Elizabeth I para estabelecer o Estabelecimento Elisabetano', 'Foi a revisão solicitada pelos bispos no Concílio de Trento'],
+    correctIndex: 1,
     difficulty: 5,
     category: 'História',
     explanation:
@@ -697,12 +557,7 @@ export const allQuestions: Question[] = [
   {
     id: 52,
     question: 'O que é o GAFCON e por que foi criado em 2008?',
-    options: [
-      'Global Anglican Future Conference — rede conservadora criada em Jerusalém (2008) em resposta a divisões na Comunhão',
-      'Grupo Africano de Formação Cristã e Oração — iniciativa de evangelismo e capacitação no continente africano',
-      'Conferência Geral Anglicana para Comunhão e Novas Oportunidades — encontro quinquenal de toda a Comunhão',
-      'Um movimento de renovação carismática e evangelística anglicano iniciado na África do Sul nos anos 1990',
-    ],
+    options: ['Global Anglican Future Conference — rede conservadora criada em Jerusalém (2008) em resposta a divisões na Comunhão', 'Grupo Africano de Formação Cristã e Oração — iniciativa de evangelismo e capacitação no continente africano', 'Conferência Geral Anglicana para Comunhão e Novas Oportunidades — encontro quinquenal de toda a Comunhão', 'Um movimento de renovação carismática e evangelística anglicano iniciado na África do Sul nos anos 1990'],
     correctIndex: 0,
     difficulty: 5,
     category: 'História',
@@ -712,13 +567,8 @@ export const allQuestions: Question[] = [
   {
     id: 53,
     question: 'Qual foi o papel de Hugh Latimer e Nicholas Ridley na Reforma Anglicana?',
-    options: [
-      'Bispos reformadores queimados na fogueira em Oxford em 1555 durante o reinado de Maria Tudor',
-      'Teólogos que redigiram os 39 Artigos da Religião durante o reinado de Elizabeth I',
-      'Missionários anglicanos que lideraram a evangelização dos povos da América do Norte',
-      'Arcebispos de York e Canterbury que reformaram o sistema canônico anglicano no século XVI',
-    ],
-    correctIndex: 0,
+    options: ['Missionários anglicanos que lideraram a evangelização dos povos da América do Norte', 'Arcebispos de York e Canterbury que reformaram o sistema canônico anglicano no século XVI', 'Bispos reformadores queimados na fogueira em Oxford em 1555 durante o reinado de Maria Tudor', 'Teólogos que redigiram os 39 Artigos da Religião durante o reinado de Elizabeth I'],
+    correctIndex: 2,
     difficulty: 5,
     category: 'Figuras Históricas',
     explanation:
@@ -727,13 +577,8 @@ export const allQuestions: Question[] = [
   {
     id: 54,
     question: 'O que diferencia a posição anglicana sobre o episcopado do catolicismo romano e do presbiterianismo?',
-    options: [
-      'Anglicanos valorizam o episcopado histórico sem torná-lo dogmaticamente essencial — posição entre Roma e o presbiterianismo',
-      'Anglicanos rejeitam inteiramente o episcopado monárquico por considerá-lo sem fundamento bíblico',
-      'Anglicanos adotam o episcopado de tipo papal, com o Arcebispo de Cantuária como primaz universal',
-      'Anglicanos seguem estrutura presbiteriana, sem distinção real entre bispos e presbíteros ordenados',
-    ],
-    correctIndex: 0,
+    options: ['Anglicanos adotam o episcopado de tipo papal, com o Arcebispo de Cantuária como primaz universal', 'Anglicanos rejeitam inteiramente o episcopado monárquico por considerá-lo sem fundamento bíblico', 'Anglicanos valorizam o episcopado histórico sem torná-lo dogmaticamente essencial — posição entre Roma e o presbiterianismo', 'Anglicanos seguem estrutura presbiteriana, sem distinção real entre bispos e presbíteros ordenados'],
+    correctIndex: 2,
     difficulty: 5,
     category: 'Teologia',
     explanation:
@@ -742,13 +587,8 @@ export const allQuestions: Question[] = [
   {
     id: 55,
     question: 'Qual foi a contribuição de George Herbert para o anglicanismo?',
-    options: [
-      'Poeta-sacerdote anglicano do século XVII cujos hinos e poemas moldam a espiritualidade anglicana até hoje',
-      'Arcebispo de Cantuária que reformou o sistema de capelânias britânicas no período da Restauração',
-      'Teólogo que formulou a doutrina anglicana sobre a predestinação e a graça na tradição calvinista',
-      'Compositor inglês que criou o repertório polifônico característico do Evensong nas catedrais anglicanas',
-    ],
-    correctIndex: 0,
+    options: ['Teólogo que formulou a doutrina anglicana sobre a predestinação e a graça na tradição calvinista', 'Arcebispo de Cantuária que reformou o sistema de capelânias britânicas no período da Restauração', 'Compositor inglês que criou o repertório polifônico característico do Evensong nas catedrais anglicanas', 'Poeta-sacerdote anglicano do século XVII cujos hinos e poemas moldam a espiritualidade anglicana até hoje'],
+    correctIndex: 3,
     difficulty: 5,
     category: 'Figuras Históricas',
     explanation:
@@ -759,12 +599,7 @@ export const allQuestions: Question[] = [
   {
     id: 56,
     question: 'Qual a importância histórica de Dom Athalício Pithan no anglicanismo brasileiro?',
-    options: [
-      'Foi o primeiro bispo nativo brasileiro, consagrado em 1940 quando a missão completou 50 anos',
-      'Foi o primeiro bispo a estabelecer uma paróquia anglicana em São Paulo no início do século XX',
-      'Foi o bispo responsável por expandir o anglicanismo ao Nordeste do Brasil a partir de 1950',
-      'Foi o primeiro bispo a ordenar mulheres ao sacerdócio na Igreja Episcopal no Brasil',
-    ],
+    options: ['Foi o primeiro bispo nativo brasileiro, consagrado em 1940 quando a missão completou 50 anos', 'Foi o primeiro bispo a ordenar mulheres ao sacerdócio na Igreja Episcopal no Brasil', 'Foi o bispo responsável por expandir o anglicanismo ao Nordeste do Brasil a partir de 1950', 'Foi o primeiro bispo a estabelecer uma paróquia anglicana em São Paulo no início do século XX'],
     correctIndex: 0,
     difficulty: 2,
     category: 'Brasil Anglicano',
@@ -774,13 +609,8 @@ export const allQuestions: Question[] = [
   {
     id: 57,
     question: 'Dom Edmund Knox Sherrill é lembrado no anglicanismo brasileiro principalmente por qual razão?',
-    options: [
-      'Em 1976 fundou a Diocese Setentrional (Recife), mudando-se do Rio de Janeiro num gesto de entrega missionária',
-      'Foi o primeiro bispo anglicano do Brasil a participar como delegado numa Conferência de Lambeth',
-      'Supervisionou a tradução oficial do Livro de Oração Comum para o português brasileiro contemporâneo',
-      'Fundou a primeira Faculdade de Teologia Anglicana autônoma do Brasil, sediada em São Paulo',
-    ],
-    correctIndex: 0,
+    options: ['Foi o primeiro bispo anglicano do Brasil a participar como delegado numa Conferência de Lambeth', 'Em 1976 fundou a Diocese Setentrional (Recife), mudando-se do Rio de Janeiro num gesto de entrega missionária', 'Fundou a primeira Faculdade de Teologia Anglicana autônoma do Brasil, sediada em São Paulo', 'Supervisionou a tradução oficial do Livro de Oração Comum para o português brasileiro contemporâneo'],
+    correctIndex: 1,
     difficulty: 3,
     category: 'Brasil Anglicano',
     explanation:
@@ -789,13 +619,8 @@ export const allQuestions: Question[] = [
   {
     id: 58,
     question: 'O Rev. Paulo Garcia ficou conhecido na Igreja Episcopal no Recife especialmente por qual iniciativa pastoral?',
-    options: [
-      'Introduzir o Encontro de Casais com Cristo (ECC), que fez a Catedral da Santíssima Trindade crescer enormemente',
-      'Fundar o primeiro seminário teológico anglicano do Nordeste, formando clérigos para a região',
-      'Criar o programa de rádio anglicano de maior audiência em Recife e no Nordeste nos anos 1970',
-      'Traduzir e adaptar os principais hinos anglicanos clássicos ao contexto cultural do Nordeste',
-    ],
-    correctIndex: 0,
+    options: ['Fundar o primeiro seminário teológico anglicano do Nordeste, formando clérigos para a região', 'Traduzir e adaptar os principais hinos anglicanos clássicos ao contexto cultural do Nordeste', 'Introduzir o Encontro de Casais com Cristo (ECC), que fez a Catedral da Santíssima Trindade crescer enormemente', 'Criar o programa de rádio anglicano de maior audiência em Recife e no Nordeste nos anos 1970'],
+    correctIndex: 2,
     difficulty: 3,
     category: 'Brasil Anglicano',
     explanation:
@@ -804,13 +629,8 @@ export const allQuestions: Question[] = [
   {
     id: 59,
     question: 'Além de ser bispo anglicano, Robinson Cavalcanti se destacou academicamente e no âmbito ecumênico por qual razão?',
-    options: [
-      'Co-fundou a Fraternidade Teológica Latino-Americana (FTL) em 1970 e lecionou Ciência Política por 35 anos na UFPE',
-      'Foi o primeiro doutor em Teologia formado inteiramente dentro do anglicanismo brasileiro',
-      'Fundou o Centro de Estudos Anglicanos da Universidade Federal de Pernambuco (UFPE) em Recife',
-      'Foi o único bispo anglicano a representar o Brasil no Conselho Mundial de Igrejas em Genebra',
-    ],
-    correctIndex: 0,
+    options: ['Foi o único bispo anglicano a representar o Brasil no Conselho Mundial de Igrejas em Genebra', 'Foi o primeiro doutor em Teologia formado inteiramente dentro do anglicanismo brasileiro', 'Fundou o Centro de Estudos Anglicanos da Universidade Federal de Pernambuco (UFPE) em Recife', 'Co-fundou a Fraternidade Teológica Latino-Americana (FTL) em 1970 e lecionou Ciência Política por 35 anos na UFPE'],
+    correctIndex: 3,
     difficulty: 4,
     category: 'Brasil Anglicano',
     explanation:
