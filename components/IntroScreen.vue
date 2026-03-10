@@ -42,8 +42,8 @@
           :class="['mode-btn', selectedMode === mode.value ? 'mode-btn--active' : '']"
           @click="selectedMode = mode.value"
         >
-          <span class="mode-btn__questions">{{ mode.value }}</span>
-          <span class="mode-btn__label">perguntas</span>
+          <span class="mode-btn__name">{{ mode.name }}</span>
+          <span class="mode-btn__label">{{ mode.label }}</span>
           <span class="mode-btn__desc">{{ mode.description }}</span>
         </button>
       </div>
@@ -226,14 +226,14 @@ const selectedMode = ref<QuizMode>(10)
   box-shadow: 0 0 0 3px rgba(23, 84, 207, 0.12);
 }
 
-.mode-btn__questions {
+.mode-btn__name {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.1;
   color: #1C1917;
 }
-.mode-btn--active .mode-btn__questions {
+.mode-btn--active .mode-btn__name {
   color: #1754CF;
 }
 

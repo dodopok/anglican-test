@@ -5,10 +5,10 @@ export type Phase = 'intro' | 'quiz' | 'result'
 
 export type QuizMode = 10 | 15 | 30
 
-export const QUIZ_MODES: { value: QuizMode; label: string; description: string }[] = [
-  { value: 10, label: '10 perguntas', description: 'Rápido · ~5 min' },
-  { value: 15, label: '15 perguntas', description: 'Moderado · ~8 min' },
-  { value: 30, label: '30 perguntas', description: 'Completo · ~15 min' },
+export const QUIZ_MODES: { value: QuizMode; name: string; label: string; description: string }[] = [
+  { value: 10, name: 'Fácil',  label: '10 perguntas', description: '~5 min' },
+  { value: 15, name: 'Médio',  label: '15 perguntas', description: '~8 min' },
+  { value: 30, name: 'Difícil', label: '30 perguntas', description: '~15 min' },
 ]
 
 export interface Answer {
@@ -113,9 +113,10 @@ export function useQuiz() {
     questions.value.length > 0 ? ((currentIndex.value + 1) / questions.value.length) * 100 : 0
   )
   const scoreTitle = computed(() => getScoreTitle(score.value, questions.value.length))
-  const currentModeLabel = computed(
-    () => QUIZ_MODES.find((m) => m.value === selectedMode.value)?.label ?? ''
-  )
+  const currentModeLabel = computed(() => {
+    const m = QUIZ_MODES.find((m) => m.value === selectedMode.value)
+    return m ? `${m.name} · ${m.label}` : ''
+  })
 
   function start(mode?: QuizMode) {
     if (mode) selectedMode.value = mode
