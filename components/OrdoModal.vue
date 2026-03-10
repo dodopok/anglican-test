@@ -8,9 +8,6 @@
 
     <!-- Modal -->
     <div class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden animate-slide-up">
-      <!-- Gold top bar -->
-      <div class="h-1 bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400" />
-
       <!-- Header -->
       <div class="bg-primary px-6 pt-5 pb-6 text-center relative">
         <button
@@ -88,7 +85,7 @@
             @click.prevent="handleStore('android')"
           >
             <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M3.18 23.76c.35.2.74.24 1.1.14l.07-.04 8.29-8.29-2.1-2.1-7.36 10.29zM20.5 10.52l-2.09-1.21L15.79 12l2.62 2.7 2.1-1.21c.6-.35.97-.97.97-1.69s-.38-1.34-.98-1.28zM2 3.36L.93 3.96c-.6.35-.93.97-.93 1.69 0 .72.33 1.34.93 1.69L2 7.94l9.42-5.44L8.8 0 2 3.36zM12.07 13.65L3.78 5.37 1.69 4.12l10.38 5.59 0 3.94z"/>
+              <path d="M8 5v14l11-7z"/>
             </svg>
             <div class="text-left">
               <div class="text-xs text-green-200">Disponível no</div>
