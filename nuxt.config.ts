@@ -55,7 +55,7 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'pt-BR' },
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no' },
         {
           name: 'description',
           content:
