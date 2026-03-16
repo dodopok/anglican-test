@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    '@vercel/analytics/nuxt',
   ],
   googleFonts: {
     families: {
