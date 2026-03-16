@@ -43,12 +43,12 @@
     <Transition name="fade">
       <div v-if="showExplanation">
         <!-- Correct / Wrong banner -->
-        <div :class="['mx-4 mb-3 px-4 py-2.5 rounded-xl flex items-center gap-2', isCurrentCorrect ? 'bg-emerald-50 border border-emerald-200' : 'bg-red-50 border border-red-200']">
-          <span class="text-base">{{ isCurrentCorrect ? '✅' : '❌' }}</span>
-          <span :class="['font-bold text-sm', isCurrentCorrect ? 'text-emerald-700' : 'text-red-700']">
+        <div :class="['mx-4 mb-3 px-4 py-2.5 rounded-xl flex items-center flex-wrap gap-x-2 gap-y-0.5', isCurrentCorrect ? 'bg-emerald-50 border border-emerald-200' : 'bg-red-50 border border-red-200']">
+          <span class="text-base flex-shrink-0">{{ isCurrentCorrect ? '✅' : '❌' }}</span>
+          <span :class="['font-bold text-sm flex-shrink-0', isCurrentCorrect ? 'text-emerald-700' : 'text-red-700']">
             {{ isCurrentCorrect ? 'Correto!' : 'Incorreto' }}
           </span>
-          <span v-if="!isCurrentCorrect" class="text-xs text-textSecondary ml-1">
+          <span v-if="!isCurrentCorrect" class="text-xs text-textSecondary">
             — a resposta certa está destacada em verde
           </span>
         </div>

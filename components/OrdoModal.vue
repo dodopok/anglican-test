@@ -7,7 +7,7 @@
     <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" @click="$emit('close')" />
 
     <!-- Modal -->
-    <div class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden animate-slide-up">
+    <div class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl animate-slide-up max-h-[90dvh] flex flex-col overflow-hidden">
       <!-- Header -->
       <div class="bg-primary px-6 pt-5 pb-6 text-center relative">
         <button
@@ -33,7 +33,7 @@
       </div>
 
       <!-- Content -->
-      <div class="px-6 py-5">
+      <div class="px-6 py-5 overflow-y-auto">
         <p class="text-textPrimary font-medium text-sm leading-relaxed mb-4">
           O <strong>Ordo</strong> é o aplicativo completo para o Ofício Diário anglicano com
           múltiplos Livros de Oração Comum (LOCs), calendário litúrgico e muito mais.
