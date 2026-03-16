@@ -5,10 +5,10 @@
     <header class="bg-white border-b border-border/60 flex-shrink-0">
       <div class="max-w-2xl mx-auto px-5 h-14 flex items-center justify-between">
         <!-- Logo -->
-        <a href="https://caminhoanglicano.com.br" target="_blank" class="flex items-center gap-2 group">
+        <a :href="config.public.siteUrl" class="flex items-center gap-2 group">
           <span class="text-gold-500 text-base leading-none select-none">✦</span>
           <span class="font-body text-sm font-semibold tracking-widest uppercase text-textPrimary group-hover:text-primary transition-colors">
-            Caminho Anglicano
+            Quiz Anglicano
           </span>
         </a>
 
@@ -22,9 +22,6 @@
           </div>
           <span class="text-xs font-semibold text-primary">{{ score }}✓</span>
         </div>
-        <span v-else class="text-xs text-textSecondary font-medium hidden sm:block">
-          Teste Anglicano
-        </span>
       </div>
     </header>
 
@@ -111,6 +108,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
+const config = useRuntimeConfig()
 import { useQuiz } from '~/composables/useQuiz'
 import IntroScreen from '~/components/IntroScreen.vue'
 import QuizQuestion from '~/components/QuizQuestion.vue'
