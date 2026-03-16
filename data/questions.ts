@@ -144,7 +144,7 @@ export const allQuestions: Question[] = [
     difficulty: 1,
     category: 'LOC & Orações',
     explanation:
-      'Na tradição anglicana, a Oração do Senhor (Pai Nosso) é central em todos os ofícios. O LOC a inclui em latim e inglês (e português nas versões brasileiras), e é recitada em toda celebração eucarística.',
+      'Na tradição anglicana, a Oração do Senhor (Pai Nosso) é central em todos os ofícios. O LOC a inclui em inglês (e português nas versões brasileiras).',
   },
   {
     id: 12,
@@ -470,7 +470,7 @@ export const allQuestions: Question[] = [
     difficulty: 4,
     category: 'Figuras Históricas',
     explanation:
-      'William Wilberforce (1759–1833) foi um político britânico profundamente influenciado pelo movimento evangélico anglicano (Clapham Sect). Dedicou sua vida a abolir o comércio escravo, conquistando a aprovação da lei abolicionista em 1807. Morreu poucos dias antes da abolição total da escravidão no Império Britânico.',
+      'William Wilberforce (1759–1833) foi um político britânico profundamente influenciado pelo movimento evangélico anglicano (Clapham Sect). Dedicou sua vida a abolir o comércio escravo, conquistando a aprovação da lei abolicionista em 1807. Morreu cerca de um mês antes da abolição total da escravidão no Império Britânico (29 de julho vs. 28 de agosto de 1833).',
   },
   {
     id: 44,
@@ -593,6 +593,215 @@ export const allQuestions: Question[] = [
     category: 'Figuras Históricas',
     explanation:
       'George Herbert (1593–1633) foi um dos maiores poetas da língua inglesa e sacerdote anglicano. Sua obra "The Temple" (1633) é um clássico da espiritualidade anglicana. Muitos de seus poemas foram transformados em hinos, incluindo "Teach me, my God and King" e "Let all the world in every corner sing".',
+  },
+
+  // ─── MUITO FÁCIL — continuação ────────────────────────────────────────────
+  {
+    id: 60,
+    question: 'O que significa o termo "anglicano"?',
+    options: ['Relativo ao papado e à Igreja de Roma', 'Relativo às igrejas reformadas da Suíça e da Escócia', 'Relativo à Igreja da Inglaterra e suas igrejas irmãs', 'Relativo à Igreja Ortodoxa grega e oriental'],
+    correctIndex: 2,
+    difficulty: 1,
+    category: 'História',
+    explanation:
+      '"Anglicano" vem do latim "Anglicanus" (relativo aos anglos/ingleses). Designa a Igreja da Inglaterra e as igrejas que dela derivam, unidas na Comunhão Anglicana — mais de 85 milhões de fiéis em mais de 165 países.',
+  },
+  {
+    id: 62,
+    question: 'Qual livro bíblico ocupa papel central no Ofício Diário anglicano, sendo lido integralmente a cada mês?',
+    options: ['O Evangelho de João', 'O livro de Isaías', 'As Cartas de Paulo', 'Os Salmos'],
+    correctIndex: 3,
+    difficulty: 1,
+    category: 'LOC & Orações',
+    explanation:
+      'O Saltério (livro dos Salmos) é o coração do Ofício Diário anglicano. Cranmer organizou o LOC para que todos os 150 salmos fossem percorridos ao longo de cada mês — herança direta da tradição monástica de oração.',
+  },
+  {
+    id: 63,
+    question: 'O que é um bispo na estrutura da Igreja Anglicana?',
+    options: ['Um delegado leigo eleito para representar a paróquia no sínodo regional', 'O pastor responsável por uma diocese, na linha da sucessão apostólica', 'O título honorífico do sacerdote com mais de vinte anos de ministério ordenado', 'O responsável pela administração financeira e canônica de uma catedral'],
+    correctIndex: 1,
+    difficulty: 1,
+    category: 'Liturgia',
+    explanation:
+      'O bispo é o pastor principal de uma diocese e o guardião da fé apostólica. No anglicanismo, o episcopado é o terceiro grau da ordem sagrada (diácono, presbítero, bispo) e carrega a sucessão apostólica histórica.',
+  },
+
+  // ─── FÁCIL — continuação ──────────────────────────────────────────────────
+  {
+    id: 64,
+    question: 'O que é o "Nunc Dimittis" na liturgia anglicana?',
+    options: ['A oração de bênção final pronunciada pelo bispo após a Eucaristia', 'Um hino de abertura do Advento baseado no livro de Isaías', 'O cântico de Simeão (Lucas 2:29-32), recitado na Oração da Tarde', 'O salmo responsorial cantado antes da leitura do Evangelho'],
+    correctIndex: 2,
+    difficulty: 2,
+    category: 'Liturgia',
+    explanation:
+      'O Nunc Dimittis ("Agora despedes" em latim) é o cântico do ancião Simeão ao ver o menino Jesus no Templo (Lucas 2:29-32). Na liturgia anglicana, é recitado ou cantado na Oração da Tarde (Vésperas/Evensong), junto ao Magnificat.',
+  },
+  {
+    id: 65,
+    question: 'O que é uma "Coleta" no culto anglicano?',
+    options: ['O momento da oferta e do dízimo durante o culto dominical', 'O conjunto de leituras bíblicas prescritas para cada domingo do ano', 'A reunião deliberativa de todos os membros da paróquia', 'Uma breve oração que reúne as intenções da assembleia num momento do culto'],
+    correctIndex: 3,
+    difficulty: 2,
+    category: 'Liturgia',
+    explanation:
+      'A Coleta (do latim "collecta", reunir) é uma breve oração que "recolhe" as intenções da assembleia num ponto da liturgia. No LOC, cada domingo e festa tem sua própria Coleta, que resume o tema litúrgico do dia. São jóias da espiritualidade anglicana.',
+  },
+  {
+    id: 66,
+    question: 'O que é o "Benedictus" na liturgia anglicana?',
+    options: ['O hino dos anjos "Santo, Santo, Santo" cantado antes da oração eucarística', 'O cântico de Zacarias (Lucas 1:68-79), usado na Oração da Manhã', 'Uma bênção final pronunciada pelo diácono ao encerrar o culto', 'O salmo de abertura do Ofício Noturno nas catedrais anglicanas'],
+    correctIndex: 1,
+    difficulty: 2,
+    category: 'Liturgia',
+    explanation:
+      'O Benedictus ("Bendito seja" em latim) é o cântico de Zacarias ao nascimento de João Batista (Lucas 1:68-79). Na liturgia anglicana, é recitado ou cantado na Oração da Manhã (Matinas), geralmente junto ao Te Deum.',
+  },
+  {
+    id: 67,
+    question: 'O que é o diaconato na ordem sagrada anglicana?',
+    options: ['O primeiro grau da ordenação, marcado pelo ministério de serviço', 'O segundo grau, equivalente ao presbítero nas igrejas reformadas', 'Um título honorífico para leigos com longa trajetória na paróquia', 'O grau de ordenação provisória para candidatos ao sacerdócio'],
+    correctIndex: 0,
+    difficulty: 2,
+    category: 'Liturgia',
+    explanation:
+      'O diaconato é o primeiro grau das ordens sagradas no anglicanismo (diácono → presbítero/sacerdote → bispo). O diácono exerce ministério de serviço (diaconia), assiste na liturgia e atua junto aos mais vulneráveis. Alguns são diáconos permanentes; outros transitam ao sacerdócio.',
+  },
+  {
+    id: 68,
+    question: 'Qual é a cor litúrgica de Pentecostes no calendário anglicano?',
+    options: ['Branco', 'Vermelho', 'Verde', 'Roxo'],
+    correctIndex: 1,
+    difficulty: 2,
+    category: 'Calendário Litúrgico',
+    explanation:
+      'O vermelho é a cor de Pentecostes, simbolizando o fogo do Espírito Santo (Atos 2). É também usada nas festas de mártires e nas ordenações e confirmações — ocasiões em que se pede o dom do Espírito.',
+  },
+
+  // ─── MÉDIO — continuação ──────────────────────────────────────────────────
+  {
+    id: 70,
+    question: 'O que foi o "Estabelecimento Elisabetano" (Elizabethan Settlement)?',
+    options: ['Tratado de paz entre Elizabeth I e o Papa que restaurou as relações com Roma em 1560', 'Constituição promulgada por Elizabeth I que criou o cargo de Arcebispo de Cantuária', 'Acordo entre anglicanos e puritanos que pôs fim à Guerra Civil inglesa em 1645', 'Legislação de 1559 que restabeleceu a supremacia real e o LOC, fixando a Igreja da Inglaterra como Via Media'],
+    correctIndex: 3,
+    difficulty: 3,
+    category: 'História',
+    explanation:
+      'O Estabelecimento Elisabetano (Acts of Supremacy e Uniformity, 1559) reimplantou o LOC após o reinado católico de Maria Tudor e criou uma Igreja que buscava acomodar tanto tendências católicas quanto protestantes — a chamada Via Media anglicana.',
+  },
+  {
+    id: 71,
+    question: 'O que é a "sucessão apostólica" e qual seu papel no anglicanismo?',
+    options: ['A doutrina de que apenas bispos em linha direta com Pedro têm validade sacramental plena', 'O princípio de que a autoridade eclesiástica se transmite pela Escritura, não pela imposição de mãos', 'A cadeia contínua de ordenação episcopal desde os apóstolos — valorizada, mas não dogmaticamente definida', 'O ensinamento de que todos os batizados participam igualmente do sacerdócio apostólico'],
+    correctIndex: 2,
+    difficulty: 3,
+    category: 'Teologia',
+    explanation:
+      'A sucessão apostólica — a cadeia contínua de ordenação episcopal remontando aos apóstolos — é valorizada no anglicanismo, especialmente pelas correntes anglo-católicas. Contudo, não é dogmaticamente definida como condição absoluta de validade, ao contrário do catolicismo romano.',
+  },
+  {
+    id: 72,
+    question: 'O que aconteceu com o anglicanismo durante o Commonwealth de Oliver Cromwell (1649–1660)?',
+    options: ['O LOC foi proibido e o episcopado abolido; o culto anglicano tornou-se clandestino', 'A Igreja da Inglaterra foi fundida com a Igreja Presbiteriana da Escócia por decreto parlamentar', 'O LOC foi mantido com modificações menores aceitas pelos puritanos no Parlamento', 'O anglicanismo aproximou-se de Roma durante esse período como reação ao puritanismo'],
+    correctIndex: 0,
+    difficulty: 3,
+    category: 'História',
+    explanation:
+      'Durante o Commonwealth puritano, o Book of Common Prayer foi proibido e o episcopado abolido. O culto anglicano passou à clandestinidade. Com a Restauração de Carlos II em 1660, o LOC foi restaurado na versão definitiva de 1662.',
+  },
+  {
+    id: 73,
+    question: 'O que é uma Diocese na estrutura episcopal anglicana?',
+    options: ['O conjunto de todas as paróquias de um país, equivalente a uma Conferência Episcopal nacional', 'A unidade básica de governo eclesiástico, composta de paróquias sob a liderança de um bispo', 'Uma subdivisão administrativa de paróquia grande, liderada por um sacerdote auxiliar', 'Um tribunal canônico formado por bispos para julgar questões doutrinárias da Igreja'],
+    correctIndex: 1,
+    difficulty: 3,
+    category: 'Liturgia',
+    explanation:
+      'A Diocese é a unidade básica da estrutura episcopal anglicana: uma comunidade de paróquias sob a liderança pastoral de um bispo. A catedral é a "cadeira" (cathedra) do bispo, centro da vida litúrgica diocesana.',
+  },
+  // ─── DIFÍCIL — continuação ────────────────────────────────────────────────
+  {
+    id: 75,
+    question: 'O que é a "abrangência anglicana" (Anglican comprehensiveness)?',
+    options: ['A tradição de acomodar diversas correntes teológicas dentro de uma mesma estrutura litúrgica e episcopal', 'A política missionária de evangelizar todos os continentes com uma liturgia uniforme e centralizada', 'O princípio de que a Bíblia contém tudo o necessário para a salvação, sem complementos tradicionais', 'A doutrina de que todos os batizados já são membros da Igreja, independentemente da denominação'],
+    correctIndex: 0,
+    difficulty: 4,
+    category: 'Teologia',
+    explanation:
+      'A "abrangência" anglicana refere-se à tradição de incluir correntes diversas — alta Igreja (anglo-católica), baixa Igreja (evangélica) e ampla Igreja (liberal) — numa estrutura comum de culto (LOC) e governo (episcopal). É ao mesmo tempo a riqueza e a principal fonte de tensão interna do anglicanismo.',
+  },
+  {
+    id: 76,
+    question: 'O que foi o "Grande Ejection" de 1662?',
+    options: ['A expulsão dos bispos católicos da Igreja da Inglaterra no início da Reforma henriciana', 'A expulsão de cerca de 2.000 ministros puritanos que recusaram assinar o Ato de Uniformidade', 'O banimento dos líderes do Movimento de Oxford por suas posições teológicas pró-romanas', 'A demissão de clérigos evangélicos que se recusaram a subscrever os 39 Artigos da Religião'],
+    correctIndex: 1,
+    difficulty: 4,
+    category: 'História',
+    explanation:
+      'O "Grande Ejection" ocorreu em 24 de agosto de 1662 (Dia de São Bartolomeu): cerca de 2.000 ministros puritanos foram expulsos por não assinarem o Ato de Uniformidade e não aceitarem o novo LOC. Esse cisma deu origem às igrejas Não-Conformistas britânicas (congregacionalistas, presbiterianos, etc.).',
+  },
+  {
+    id: 77,
+    question: 'O que é o Sínodo Geral da Igreja da Inglaterra?',
+    options: ['A assembleia anual de todos os bispos da Comunhão Anglicana realizada em Canterbury', 'O tribunal eclesiástico que julga questões doutrinais e canônicas da Igreja da Inglaterra', 'O conselho de arcebispos que governa a Igreja em conjunto com a Coroa britânica', 'O órgão legislativo da Igreja, com três câmaras: Bispos, Clero e Leigos eleitos'],
+    correctIndex: 3,
+    difficulty: 4,
+    category: 'História',
+    explanation:
+      'O Sínodo Geral (General Synod), criado em 1970, é o órgão legislativo da Igreja da Inglaterra, dividido em três câmaras: Bispos, Clero e Leigos. Aprova cânones, liturgias e posições doutrinais — mas certas decisões precisam da sanção do Parlamento britânico.',
+  },
+  {
+    id: 78,
+    question: 'Quem foi Frederick Denison Maurice e qual sua contribuição ao anglicanismo?',
+    options: ['Teólogo do século XIX que fundou o Socialismo Cristão anglicano, unindo fé e justiça social', 'Arcebispo de Cantuária que presidiu a primeira Conferência de Lambeth em 1867', 'Missionário que traduziu o LOC para o hindi e evangelizou a Índia britânica no século XIX', 'Bispo que liderou o movimento de reaproximação com a Igreja Católica Romana após o Movimento de Oxford'],
+    correctIndex: 0,
+    difficulty: 4,
+    category: 'Figuras Históricas',
+    explanation:
+      'Frederick Denison Maurice (1805–1872) foi teólogo anglicano e um dos fundadores do Socialismo Cristão, argumentando que o Evangelho tem implicações sociais diretas. Foi professor no King\'s College e influenciou profundamente a tradição de engajamento social da Igreja da Inglaterra.',
+  },
+  {
+    id: 79,
+    question: 'Quem foi Lucien Lee Kinsolving e qual seu papel no anglicanismo brasileiro?',
+    options: ['Primeiro clérigo ordenado pela missão americana no Brasil, em Porto Alegre em 1895', 'Arcebispo de Nova York que enviou os primeiros missionários para o Rio Grande do Sul em 1888', 'Pioneiro missionário americano e primeiro bispo consagrado para o Brasil (1899)', 'Bispo auxiliar que supervisionou a missão anglicana no Brasil antes da autonomia de 1965'],
+    correctIndex: 2,
+    difficulty: 4,
+    category: 'Brasil Anglicano',
+    explanation:
+      'Lucien Lee Kinsolving (1862–1917) chegou ao Rio Grande do Sul em 1891 junto com James Watson Morris, sendo o pioneiro da missão entre brasileiros. Foi consagrado bispo missionário para o Brasil em 1899, liderando a Igreja Episcopal Brasileira até sua morte.',
+  },
+
+  // ─── DIFICÍLIMA — continuação ─────────────────────────────────────────────
+  {
+    id: 80,
+    question: 'O que foi a "Controvérsia Gorham" (1847–1850) e por que teve importância eclesiológica?',
+    options: ['Debate sobre a validade da ordenação feminina, antecipando em um século a decisão formal', 'Disputa sobre regeneração batismal que levou à questão da autoridade do Estado sobre a Igreja', 'Conflito sobre a presença real na Eucaristia que gerou a primeira excomunhão na Igreja pós-Reforma', 'Crise sobre o uso da confissão auricular, que dividiu o Movimento de Oxford ao meio'],
+    correctIndex: 1,
+    difficulty: 5,
+    category: 'História',
+    explanation:
+      'O Rev. Gorham foi rejeitado pelo Bispo de Exeter por negar a regeneração batismal ex opere operato. O Conselho Privado (civil) reverteu a decisão episcopal, gerando crise: quem tem autoridade final sobre a doutrina anglicana — a Igreja ou o Estado? Henry Manning e outros converteram-se ao catolicismo romano em resposta.',
+  },
+  {
+    id: 81,
+    question: 'O que é a "teologia da encarnação" e como ela molda a espiritualidade anglicana?',
+    options: ['Doutrina que afirma que Cristo assumiu carne apenas aparente, reinterpretada pelos teólogos de Lux Mundi', 'Princípio de que a teologia anglicana deve encarnar-se culturalmente, rejeitando formas litúrgicas universais', 'Ênfase de que a encarnação de Cristo santificou a matéria e o mundo — daí a valorização da liturgia, da arte e da cultura', 'Teoria de F. D. Maurice de que todos os humanos já estão em Cristo por criação, antes mesmo da fé'],
+    correctIndex: 2,
+    difficulty: 5,
+    category: 'Teologia',
+    explanation:
+      'A "teologia da encarnação" — desenvolvida especialmente em "Lux Mundi" (1889) — afirma que a encarnação do Filho santifica a matéria, o corpo, a história e a cultura. Daí a atenção anglicana à beleza litúrgica, à música sacra, à poesia e ao engajamento com o mundo, em vez de opor graça e natureza.',
+  },
+  {
+    id: 82,
+    question: 'O que é o movimento "Lux Mundi" (1889) no contexto da teologia anglicana?',
+    options: ['O manifesto fundador do Movimento de Oxford, redigido por Pusey e Keble em defesa da catolicidade anglicana', 'Um conjunto de sermões pregados em Oxford por Newman antes de sua conversão ao catolicismo romano', 'A declaração doutrinária da Conferência de Lambeth de 1888 sobre os fundamentos da fé anglicana', 'Uma coletânea de ensaios anglo-católicos que integrou o anglicanismo ao pensamento moderno e à crítica bíblica'],
+    correctIndex: 3,
+    difficulty: 5,
+    category: 'Teologia',
+    explanation:
+      '"Lux Mundi" (1889), editado por Charles Gore, foi uma coletânea de ensaios de teólogos anglo-católicos que buscou integrar o anglicanismo ao pensamento moderno, à evolução darwinista e à crítica histórica da Bíblia. Representou uma segunda fase do Movimento de Oxford, mais aberta ao mundo contemporâneo.',
   },
 
   // ─── FIGURAS DO ANGLICANISMO BRASILEIRO ───────────────────────────────────
