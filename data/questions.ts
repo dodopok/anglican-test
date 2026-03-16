@@ -149,7 +149,7 @@ export const allQuestions: Question[] = [
   {
     id: 12,
     question: 'Qual é o dia mais importante do calendário cristão anglicano?',
-    options: ['A Páscoa (Ressurreição do Senhor)', 'Epifania', 'O Natal', 'Pentecostes'],
+    options: ['A Páscoa', 'Epifania', 'O Natal', 'Pentecostes'],
     correctIndex: 0,
     difficulty: 1,
     category: 'Calendário Litúrgico',
@@ -251,7 +251,7 @@ export const allQuestions: Question[] = [
   {
     id: 22,
     question: 'O que é o "Magnificat" na liturgia anglicana?',
-    options: ['Uma oração eucarística', 'O hino de abertura do Advento', 'O cântico de Maria, registrado em Lucas 1:46-55', 'Um salmo da Quaresma'],
+    options: ['Uma oração eucarística', 'O hino de abertura do Advento', 'O cântico de Maria', 'Um salmo da Quaresma'],
     correctIndex: 2,
     difficulty: 2,
     category: 'Liturgia',
@@ -261,7 +261,7 @@ export const allQuestions: Question[] = [
   {
     id: 23,
     question: 'Qual é o nome da oração pelo mundo e pelas necessidades da comunidade no culto anglicano?',
-    options: ['Confissão Geral', 'Coleta', 'Prefácio', 'Oração dos Fiéis (ou Intercessões)'],
+    options: ['Confissão Geral', 'Coleta', 'Prefácio', 'Oração dos Fiéis'],
     correctIndex: 3,
     difficulty: 2,
     category: 'Liturgia',
@@ -353,7 +353,7 @@ export const allQuestions: Question[] = [
   {
     id: 32,
     question: 'Qual é o período litúrgico entre o Natal e a Quarta-feira de Cinzas?',
-    options: ['Epifania (Tempo após o Natal)', 'Advento', 'Pentecostes', 'Tempo Pascal'],
+    options: ['Epifania', 'Advento', 'Pentecostes', 'Tempo Pascal'],
     correctIndex: 0,
     difficulty: 3,
     category: 'Calendário Litúrgico',
@@ -827,7 +827,7 @@ export const allQuestions: Question[] = [
   },
   {
     id: 58,
-    question: 'O Rev. Paulo Garcia ficou conhecido na Igreja Episcopal no Recife especialmente por qual iniciativa pastoral?',
+    question: 'Paulo Garcia ficou conhecido na Igreja Episcopal no Recife especialmente por qual iniciativa pastoral?',
     options: ['Fundar o primeiro seminário teológico anglicano do Nordeste, formando clérigos para a região', 'Traduzir e adaptar os principais hinos anglicanos clássicos ao contexto cultural do Nordeste', 'Introduzir o Encontro de Casais com Cristo (ECC), que fez a Catedral da Santíssima Trindade crescer enormemente', 'Criar o programa de rádio anglicano de maior audiência em Recife e no Nordeste nos anos 1970'],
     correctIndex: 2,
     difficulty: 3,
